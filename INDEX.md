@@ -1,6 +1,6 @@
 # Image Index
 
-> 快照: 2026-10-30 06:12 UTC ｜ 36 directories, 185 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-10 09:47 UTC ｜ 37 directories, 193 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
@@ -13,6 +13,7 @@
 - [dsh-museav-assets/](dsh-museav-assets/) — 2 images
 - [ego-lite-ref/](ego-lite-ref/) — 2 images
 - [facet/](facet/) — 17 images
+- [fovea/](fovea/) — 8 images
 - [free-imgbed/](free-imgbed/) — 1 images
 - [frontend-contrast-guard/](frontend-contrast-guard/) — 1 images
 - [hypit/](hypit/) — 13 images
