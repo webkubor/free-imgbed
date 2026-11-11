@@ -1,6 +1,6 @@
 # Image Index
 
-> 快照: 2026-11-10 15:39 UTC ｜ 37 directories, 193 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-11 13:03 UTC ｜ 37 directories, 193 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
@@ -15,7 +15,6 @@
 - [facet/](facet/) — 17 images
 - [fovea/](fovea/) — 8 images
 - [free-imgbed/](free-imgbed/) — 1 images
-- [frontend-contrast-guard/](frontend-contrast-guard/) — 1 images
 - [hypit/](hypit/) — 13 images
 - [lite-browser/](lite-browser/) — 2 images
 - [logo-brand-designer/](logo-brand-designer/) — 2 images
@@ -32,6 +31,7 @@
 - [supercli/](supercli/) — 5 images
 - [tombstone-reaper/](tombstone-reaper/) — 1 images
 - [typora-Bloom-theme/](typora-Bloom-theme/) — 14 images
+- [ui-craft/](ui-craft/) — 1 images
 - [video-editor/](video-editor/) — 1 images
 - [vite-plugin-agent-eyes/](vite-plugin-agent-eyes/) — 2 images
 - [voxflow/](voxflow/) — 4 images
