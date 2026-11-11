@@ -105,8 +105,8 @@
       "direction": "区分产品状态图与品牌符号；静态主标识在 32px 下也应可辨。"
     },
     {
-      "id": "frontend-contrast-guard",
-      "repo": "https://github.com/webkubor/frontend-contrast-guard",
+      "id": "ui-craft",
+      "repo": "https://github.com/webkubor/ui-craft",
       "sourceFiles": [
         "README.md",
         "docs/frontend-review-standard.md",

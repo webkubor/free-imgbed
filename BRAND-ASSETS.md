@@ -45,6 +45,6 @@
 - **Kyvault / xiaobai-kanban / boiling-snow**：README 顶部现有 banner/宣传图，不能仅凭文件名或 alt 文本认定它们是 logo。
 - **有 banner、缺独立 logo**：Kyvault、xiaobai-kanban、Boiling Snow、Bloom for Typora、dsh-bloom-theme、ego-lite-ref。先保留现有 banner；在各项目确定专属视觉后再增补 logo。
 - **未在 README 展示标识**：ai-orb、device-passport（已入库，README 仍使用 banner）、dsh-llm-hub（已入库，README 仍使用 R2 banner）。应用内部 favicon 不等同于 README 品牌图。
-- **无可确认源图的自有项目**：ai-sse-kit、cs-mcp、frontend-contrast-guard、im-notify-kit、mlx-vlm-kit、path-guard、charmoji-sticker-skill、deadcode-reaper-skill、release-sync-skill、writing-standard-skills、suno-publisher、vite-plugin-refresh-guard 等。先保留文本标题，不自动生成相同模板的占位 logo。
+- **无可确认源图的自有项目**：ai-sse-kit、cs-mcp、ui-craft、im-notify-kit、mlx-vlm-kit、path-guard、charmoji-sticker-skill、deadcode-reaper-skill、release-sync-skill、writing-standard-skills、suno-publisher、vite-plugin-refresh-guard 等。先保留文本标题，不自动生成相同模板的占位 logo。
 
 后续新增：先核对项目源文件、视觉用途及名称；优先用合格 SVG。新增后写入 `brand/*.json` 并在本表登记，迁移使用方引用，最后刷新画廊与评审页。U 盘原始素材不动。

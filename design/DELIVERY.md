@@ -50,7 +50,7 @@
 | typora-Bloom-theme | 有花形 favicon 与横幅，独立品牌未确认 | [色彩规范](https://github.com/webkubor/typora-Bloom-theme/blob/HEAD/docs/theme-color-standard.md) |
 | dsh-bloom-theme | 有 R2 banner，需与 Typora 系列区分 | [README](https://github.com/webkubor/dsh-bloom-theme/blob/HEAD/README.md) |
 | ai-orb | 状态球是产品本体，本仓未确认独立品牌图 | [README](https://github.com/webkubor/ai-orb/blob/HEAD/README.md) |
-| frontend-contrast-guard | CSS 对比度、计量与评审证据工具 | [README](https://github.com/webkubor/frontend-contrast-guard/blob/HEAD/README.md) |
+| ui-craft | CSS 对比度、计量与评审证据工具 | [README](https://github.com/webkubor/ui-craft/blob/HEAD/README.md) |
 | vite-plugin-refresh-guard | 新部署后的刷新策略插件 | [README](https://github.com/webkubor/vite-plugin-refresh-guard/blob/HEAD/README.md) |
 | cs-mcp | CLI 能力网络入口 | [README](https://github.com/webkubor/cs-mcp/blob/HEAD/README.md) |
 | im-notify-kit | 飞书 / 企业微信通知发送层 | [README](https://github.com/webkubor/im-notify-kit/blob/HEAD/README.md) |
