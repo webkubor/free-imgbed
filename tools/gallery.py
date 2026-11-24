@@ -17,21 +17,13 @@ spec.loader.exec_module(contract)
 
 
 def entries():
-    manifests = {m['id']: m for m in contract.load_manifests()}
-    # A manifest id is the project name, which may differ from its directory
-    # (e.g. a repo whose GitHub name is not the brand name). Resolve the
-    # directory from the asset path instead of assuming they are equal.
-    by_dir = {}
-    for m in manifests.values():
-        parent = PurePosixPath(m['asset']).parts[0]
-        by_dir[parent] = m
-    result = []
+    manifests = contract.load_manifests()
+    asset_dirs = {PurePosixPath(m['asset']).parts[0] for m in manifests}
+    result = [(m['id'], m['asset'], m['darkAsset']) for m in manifests]
     for directory in sorted(ROOT.iterdir()):
         if not directory.is_dir() or directory.name.startswith('.') or directory.name in SKIP:
             continue
-        manifest = by_dir.get(directory.name)
-        if manifest:
-            result.append((manifest['id'], manifest['asset'], manifest['darkAsset']))
+        if directory.name in asset_dirs:
             continue
         # Projects without a manifest use their current logo file.
         asset = next((directory / name for name in ('mark-v3.svg', 'logo-v2.svg', 'logo.svg', 'logo.png',
@@ -43,10 +35,8 @@ def entries():
                 dark = directory / 'logo-dark.svg'
             result.append((directory.name, asset.relative_to(ROOT).as_posix(),
                            dark.relative_to(ROOT).as_posix() if dark.is_file() else None))
-    missing = set(by_dir) - {PurePosixPath(a).parts[0] for _, a, _ in result}
-    if missing:
-        raise ValueError('manifest asset directories missing: ' + ', '.join(sorted(missing)))
-    return result
+    return sorted(result)
+
 
 
 def build(site_theme=False):

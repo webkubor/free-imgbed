@@ -1,6 +1,6 @@
 # 品牌资产清单
 
-本表记录 `~/dev` 自有项目在图床中的**现役**标识。原则：**每个项目只保留当前使用的 logo**（深浅主题成对的 `mark-v3.svg` / `mark-v3-dark.svg`），旧版与弃用版本一律不进仓。`brand/*.json` 是唯一真源，画廊、评审页与 README 均由它生成。
+本表记录自有项目和组织的**现役标识**。多个项目共用同一标识时，直接引用同一份素材。品牌条目以 `brand/*.json` 为准，画廊、评审页与 README 均由它生成。
 
 | 项目 | 现役标识 | 状态 |
 |---|---|---|
@@ -11,9 +11,11 @@
 | dsh-museav-assets | `dsh-museav-assets/mark-v3.svg` + `dsh-museav-assets/mark-v3-dark.svg` | 待评审 |
 | facet | `facet/mark-v3.svg` + `facet/mark-v3-dark.svg` | 定稿 |
 | free-imgbed | `free-imgbed/mark-v3.svg` | 定稿 |
+| jianpu-editor | `xianling-music/logo-light.svg` + `xianling-music/logo-dark.svg` | 复用仙灵音乐组织标识 |
 | lite-browser | `lite-browser/mark-v3.svg` + `lite-browser/mark-v3-dark.svg` | 待评审 |
 | logo-brand-designer | `logo-brand-designer/mark-v3.svg` + `logo-brand-designer/mark-v3-dark.svg` | 待评审 |
 | meridian | `meridian/mark-v3.svg` + `meridian/mark-v3-dark.svg` | 待评审 |
+| museav-ai | `museav-ai/logo.svg` | 官方组织标识 |
 | museav-cli | `museav-cli/mark-v3.svg` + `museav-cli/mark-v3-dark.svg` | 待评审 |
 | plugins | `plugins/mark-v3.svg` + `plugins/mark-v3-dark.svg` | 待评审 |
 | pr-contributor-skill | `pr-contributor-skill/mark-v3.svg` + `pr-contributor-skill/mark-v3-dark.svg` | 待评审 |
@@ -25,10 +27,11 @@
 | voxflow | `voxflow/mark-v3.svg` + `voxflow/mark-v3-dark.svg` | 定稿 |
 | wallpaper-generator | `wallpaper-generator/mark-v3.svg` + `wallpaper-generator/mark-v3-dark.svg` | 定稿 |
 | webkubor | `webkubor/mark-v3.svg` + `webkubor/mark-v3-dark.svg` | 待评审 |
+| xianling-music | `xianling-music/logo-light.svg` + `xianling-music/logo-dark.svg` | 仙灵音乐组织标识 |
 
 ## 版本策略
 
-- 图床只保留每项目的现役 logo；旧版、过渡版、草稿版（如 `logo.svg`、`logo-v2.svg`、`museav-logo.svg`、`logo-icon.webp`）已清理，不再作为兼容链接保留。
+- 图床只保留每项目的现役 logo；替换完成后清理弃用的旧版、过渡版和草稿。
 - 替换标识时**先迁移使用方**（各项目 README、站点、博客数据），确认无引用后再移除旧文件。
 - 深浅主题成对的文件（`mark-v3.svg` + `mark-v3-dark.svg`）视为同一版本，成对保留。
 - banner、截图、favicon、OG 图不属于 logo，不在此表；也不自动冒充 logo。

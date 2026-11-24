@@ -1,0 +1,21 @@
+{
+ "id": "xianling-music",
+ "name": "仙灵音乐",
+ "sourceRepo": "xianling-music/xianling-music",
+ "sourceFiles": [
+  "README.md",
+  "assets/logo-light.svg",
+  "assets/logo-dark.svg"
+ ],
+ "asset": "xianling-music/logo-light.svg",
+ "darkAsset": "xianling-music/logo-dark.svg",
+ "tokens": {
+  "primary": "#7656E4",
+  "accent": "#9D7BE3",
+  "onLight": "#4D32A7",
+  "onDark": "#D0AAFF",
+  "background": "transparent"
+ },
+ "rationale": "仙灵音乐组织与简谱编辑器共用暮紫音波标识。源文件来自仙灵music 产品仓库，图床版仅扩展透明画布留白。渐变另用 #5277C5、#6050BA、#CFB3F4、#7FADF6、#A594F1、#E2CEFF。",
+ "status": "ready"
+}

@@ -1,0 +1,20 @@
+{
+ "id": "jianpu-editor",
+ "name": "简谱编辑器",
+ "sourceRepo": "webkubor/jianpu-editor",
+ "sourceFiles": [
+  "README.md"
+ ],
+ "asset": "xianling-music/logo-light.svg",
+ "darkAsset": "xianling-music/logo-dark.svg",
+ "tokens": {
+  "primary": "#7656E4",
+  "accent": "#9D7BE3",
+  "onLight": "#4D32A7",
+  "onDark": "#D0AAFF",
+  "background": "transparent"
+ },
+ "rationale": "简谱编辑器沿用仙灵音乐的暮紫音波标识，直接引用同一组浅底和深底 SVG。渐变另用 #5277C5、#6050BA、#CFB3F4、#7FADF6、#A594F1、#E2CEFF。",
+ "status": "ready",
+ "dir": "xianling-music"
+}
