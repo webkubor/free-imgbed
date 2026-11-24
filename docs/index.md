@@ -10,6 +10,9 @@ hero:
       text: 快速开始
       link: /guide/getting-started
     - theme: alt
+      text: 浏览图标包
+      link: /guide/social-icons
+    - theme: alt
       text: GitHub 仓库
       link: https://github.com/webkubor/free-imgbed
   image:

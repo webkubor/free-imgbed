@@ -10,6 +10,7 @@ export default defineConfig({
     siteTitle: 'free-imgbed',
     nav: [
       { text: '指南', link: '/guide/getting-started' },
+      { text: '图标包', link: '/guide/social-icons' },
       { text: '模板', link: '/guide/templates' },
       { text: '标识评审', link: '/design/logo-review.html' },
       { text: '待设计', link: '/design/logo-briefs.html' },
@@ -23,6 +24,7 @@ export default defineConfig({
           { text: '图片命名与链接', link: '/guide/naming-and-links' },
           { text: '查看与管理图片', link: '/guide/browsing' },
           { text: '项目 logo 墙', link: '/guide/logo-gallery' },
+          { text: '社交平台图标包', link: '/guide/social-icons' },
           { text: '新旧标识评审', link: '/design/logo-review.html' },
           { text: '待设计任务', link: '/design/logo-briefs.html' }
         ]

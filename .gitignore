@@ -5,6 +5,7 @@ docs/node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
 docs/public/design/
+docs/public/downloads/social-icons-v*.zip
 __pycache__/
 *.pyc
 

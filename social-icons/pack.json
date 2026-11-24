@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "groups": [
+    {
+      "name": "国内平台",
+      "icons": [
+        {
+          "name": "小红书",
+          "file": "xiaohongshu.svg",
+          "source": "https://pro.xiaohongshu.com"
+        },
+        {
+          "name": "微信",
+          "file": "wechat.svg",
+          "source": "https://wechat.design/brand/main-brand"
+        },
+        {
+          "name": "抖音",
+          "file": "douyin.png",
+          "source": "https://www.douyin.com/favicon.ico"
+        },
+        {
+          "name": "微博",
+          "file": "sinaweibo.svg",
+          "source": "https://en.wikipedia.org/wiki/Sina_Weibo"
+        },
+        {
+          "name": "哔哩哔哩",
+          "file": "bilibili.svg",
+          "source": "https://www.bilibili.com"
+        },
+        {
+          "name": "知乎",
+          "file": "zhihu.svg",
+          "source": "https://www.zhihu.com"
+        }
+      ]
+    },
+    {
+      "name": "海外平台",
+      "icons": [
+        {
+          "name": "X（推特）",
+          "file": "x.svg",
+          "source": "https://about.x.com/en/who-we-are/brand-toolkit"
+        },
+        {
+          "name": "YouTube",
+          "file": "youtube.svg",
+          "source": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors"
+        },
+        {
+          "name": "Instagram",
+          "file": "instagram.svg",
+          "source": "https://about.meta.com/brand/resources/instagram"
+        },
+        {
+          "name": "Threads",
+          "file": "threads.svg",
+          "source": "https://www.meta.com/brand/resources/instagram/threads"
+        },
+        {
+          "name": "Bluesky",
+          "file": "bluesky.svg",
+          "source": "https://bsky.social/about/blog/press-faq"
+        },
+        {
+          "name": "Telegram",
+          "file": "telegram.svg",
+          "source": "https://telegram.org/tour/screenshots"
+        },
+        {
+          "name": "Discord",
+          "file": "discord.svg",
+          "source": "https://discord.com/branding"
+        },
+        {
+          "name": "GitHub",
+          "file": "github.svg",
+          "source": "https://github.com/logos"
+        },
+        {
+          "name": "Reddit",
+          "file": "reddit.svg",
+          "source": "https://www.redditinc.com/brand"
+        },
+        {
+          "name": "Facebook",
+          "file": "facebook.svg",
+          "source": "https://about.meta.com/brand/resources/facebook/logo"
+        },
+        {
+          "name": "TikTok",
+          "file": "tiktok.svg",
+          "source": "https://tiktok.com"
+        }
+      ]
+    }
+  ]
+}

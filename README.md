@@ -11,6 +11,8 @@
 
 图片和项目推广素材提交到仓库后，可通过 GitHub raw、jsDelivr CDN 访问。这里集中管理 README 的 logo、banner、截图及演示视频；[品牌资产清单](BRAND-ASSETS.md)记录现役路径、复用关系和待设计项。代码按 MIT 许可发布，项目图片素材保留原权利。
 
+[社交平台图标包](https://imgbed.webkubor.online/guide/social-icons.html)可预览、复制直链和下载整包，素材来源见[使用说明](social-icons/NOTICE.md)。
+
 ## 开始使用
 
 1. Fork 此仓库并克隆到本机。需要压缩图片时安装 `cwebp`；在 macOS 上可执行 `brew install webp`。

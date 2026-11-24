@@ -4,8 +4,9 @@
   "type": "module",
   "scripts": {
     "brand:prepare": "python3 ../tools/brand-ui.py --publish",
-    "dev": "python3 ../tools/brand-ui.py --publish && vitepress dev",
-    "build": "python3 ../tools/brand-ui.py --publish && vitepress build",
+    "assets:prepare": "pnpm run brand:prepare && python3 ../tools/build-icon-pack.py",
+    "dev": "pnpm run assets:prepare && vitepress dev",
+    "build": "pnpm run assets:prepare && vitepress build",
     "preview": "vitepress preview"
   },
   "devDependencies": {

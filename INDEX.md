@@ -1,6 +1,6 @@
 # Image Index
 
-> 快照: 2026-11-24 13:05 UTC ｜ 43 directories, 209 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-24 13:17 UTC ｜ 44 directories, 226 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
@@ -33,6 +33,7 @@
 - [reel-kit/](reel-kit/) — 4 images
 - [reverse-skill/](reverse-skill/) — 3 images
 - [scorecard/](scorecard/) — 2 images
+- [social-icons/](social-icons/) — 17 images
 - [supercli/](supercli/) — 5 images
 - [tombstone-reaper/](tombstone-reaper/) — 1 images
 - [typora-Bloom-theme/](typora-Bloom-theme/) — 14 images
