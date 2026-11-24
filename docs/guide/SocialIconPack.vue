@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { withBase } from 'vitepress'
 import pack from '../../social-icons/pack.json'
 
-const iconBase = 'https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/social-icons/'
+const iconBase = 'https://imgbed.webkubor.online/social-icons/'
 const download = withBase(`/downloads/social-icons-v${pack.version}.zip`)
 const copyStatus = ref('')
 const copied = ref('')
