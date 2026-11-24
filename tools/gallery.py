@@ -69,7 +69,8 @@ def build(site_theme=False):
     if organization_rows:
         heading = '### GitHub 组织 {#github-organizations}' if site_theme else '### GitHub 组织'
         lines.extend([heading, '', '| 组织 | 标识 | 文件 |', '|---|---|---|', *organization_rows, ''])
-    lines.extend(['### 项目标识', '', '| 项目 | 标识 | 文件 |', '|---|---|---|', *project_rows])
+    heading = '### 项目标识 {#project-logos}' if site_theme else '### 项目标识'
+    lines.extend([heading, '', '| 项目 | 标识 | 文件 |', '|---|---|---|', *project_rows])
     lines.extend(['', END])
     return '\n'.join(lines)
 

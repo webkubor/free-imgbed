@@ -3,39 +3,6 @@
   "palettePolicy": "以下色板全部是旧简报保留的待评审建议，不是已核验或已批准的项目品牌。设计前先读生产资料，用户 token 优先；源码中的主题、徽章、状态色不可自动升级为品牌主色。",
   "projects": [
     {
-      "id": "kyvault",
-      "repo": "https://github.com/webkubor/kyvault",
-      "sourceFiles": [
-        "README.md",
-        "SKILL.md"
-      ],
-      "description": "AI 时代开发者密钥与资产台账管理器，用别名注入，减少向模型上下文传递明文。",
-      "tone": "可靠、清晰、克制",
-      "suggestedColors": [
-        "#4C9A6B",
-        "#2F6F4F",
-        "#0F1A14"
-      ],
-      "assetNote": "README 展示 keyring-banner 横幅；本仓尚无确认的独立标识。",
-      "direction": "围绕别名注入与本地资产组织构思；不暗示已获安全认证。"
-    },
-    {
-      "id": "xiaobai-kanban",
-      "repo": "https://github.com/webkubor/xiaobai-kanban",
-      "sourceFiles": [
-        "README.md"
-      ],
-      "description": "面向不懂代码用户的自然语言 Agent 编码看板。",
-      "tone": "亲和、清晰、低门槛",
-      "suggestedColors": [
-        "#FF9F45",
-        "#FFD166",
-        "#2B2118"
-      ],
-      "assetNote": "README 展示 xiaobai-kanban-banner；横幅不作为独立 logo。",
-      "direction": "可从看板卡片与任务推进构思，兼顾中英文场景。"
-    },
-    {
       "id": "boiling-snow",
       "repo": "https://gitlab.com/webkubor/boiling-snow",
       "sourceFiles": [

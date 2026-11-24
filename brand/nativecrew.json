@@ -1,0 +1,21 @@
+{
+ "id": "nativecrew",
+ "name": "NativeCrew",
+ "sourceRepo": "webkubor/nativecrew",
+ "sourceFiles": [
+  "brand/README.md",
+  "brand/mark.svg",
+  "icon.svg"
+ ],
+ "asset": "nativecrew/logo.svg",
+ "darkAsset": null,
+ "tokens": {
+  "primary": "#FF7D4F",
+  "accent": "#C63732",
+  "onLight": "#FF7D4F",
+  "onDark": "#FF7D4F",
+  "background": "transparent"
+ },
+ "rationale": "陶橙色层沿单一连续轮廓铺开，底部的留白切口保留已确认的形态。深浅底共用透明标志。 图床只调整透明画布留白，保留源文件路径几何和配色。 源 SVG 还有 #B82E37、#C73238、#FF650E、#FF7D42、#FFAF79、#FFC994、#FFF0CF。",
+ "status": "ready"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "fovea",
+ "name": "Fovea",
+ "sourceRepo": "webkubor/fovea",
+ "sourceFiles": [
+  "brand/manifest.json",
+  "brand/assets/mark.svg",
+  "brand/assets/mark-dark.svg"
+ ],
+ "asset": "fovea/logo.svg",
+ "darkAsset": "fovea/logo-dark.svg",
+ "tokens": {
+  "primary": "#00F0FF",
+  "accent": "#7C5CFF",
+  "onLight": "#006674",
+  "onDark": "#00F0FF",
+  "background": "transparent"
+ },
+ "rationale": "断开的上横和完整中横组成 F，呼应对旧上下文和最近消息的两种处理。 图床只调整透明画布留白，保留源文件路径几何和配色。 源 SVG 还有 #05060B、#141728、#5934C7、#AC007F、#FF2BD6。",
+ "status": "ready"
+}

@@ -1,0 +1,21 @@
+{
+ "id": "xiaobai-kanban",
+ "name": "小白看板",
+ "sourceRepo": "supercli-site/xiaobai-kanban",
+ "sourceFiles": [
+  "docs/brand-design.md",
+  "public/favicon.svg",
+  "public/favicon-dark.svg"
+ ],
+ "asset": "xiaobai-kanban/logo.svg",
+ "darkAsset": "xiaobai-kanban/logo-dark.svg",
+ "tokens": {
+  "primary": "#F5821F",
+  "accent": "#D9690B",
+  "onLight": "#D9690B",
+  "onDark": "#FFA64D",
+  "background": "transparent"
+ },
+ "rationale": "现用网站导航标识以角框和对勾表达「把想法推进到完成」。深浅底使用源仓定稿色。 图床只调整透明画布留白，保留源文件路径几何和配色。",
+ "status": "ready"
+}

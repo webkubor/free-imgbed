@@ -1,0 +1,21 @@
+{
+ "id": "harnessweight",
+ "name": "HarnessWeight",
+ "sourceRepo": "webkubor/harnessweight",
+ "sourceFiles": [
+  "brand/manifest.json",
+  "brand/assets/lens.svg",
+  "brand/assets/lens-dark.svg"
+ ],
+ "asset": "harnessweight/logo.svg",
+ "darkAsset": "harnessweight/logo-dark.svg",
+ "tokens": {
+  "primary": "#17A9A2",
+  "accent": "#F26B1D",
+  "onLight": "#2B2F36",
+  "onDark": "#3A414D",
+  "background": "transparent"
+ },
+ "rationale": "三片叠镜在重叠处形成暖黄色，呼应多组 Agent 用量的对照。 图床只调整透明画布留白，保留源文件路径几何和配色。 源 SVG 还有 #000000、#1E6F6B、#5EE0D2、#6B7484、#FFA23A、#FFB547、#FFE27A。",
+ "status": "ready"
+}

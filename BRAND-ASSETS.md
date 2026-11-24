@@ -21,12 +21,16 @@
 | dsh-llm-hub | `dsh-llm-hub/mark-v3.svg` + `dsh-llm-hub/mark-v3-dark.svg` | 定稿 |
 | dsh-museav-assets | `dsh-museav-assets/mark-v3.svg` + `dsh-museav-assets/mark-v3-dark.svg` | 待评审 |
 | facet | `facet/mark-v3.svg` + `facet/mark-v3-dark.svg` | 定稿 |
+| fovea | `fovea/logo.svg` + `fovea/logo-dark.svg` | 项目定稿 |
 | free-imgbed | `free-imgbed/mark-v3.svg` | 定稿 |
+| harnessweight | `harnessweight/logo.svg` + `harnessweight/logo-dark.svg` | 项目定稿 |
 | jianpu-editor | `xianling-music/logo-light.svg` + `xianling-music/logo-dark.svg` | 复用仙灵音乐组织标识 |
+| kyvault | `kyvault/logo.svg` + `kyvault/logo-dark.svg` | Ky 桌面版现用标识 |
 | lite-browser | `lite-browser/mark-v3.svg` + `lite-browser/mark-v3-dark.svg` | 待评审 |
 | logo-brand-designer | `logo-brand-designer/mark-v3.svg` + `logo-brand-designer/mark-v3-dark.svg` | 待评审 |
 | meridian | `meridian/mark-v3.svg` + `meridian/mark-v3-dark.svg` | 待评审 |
 | museav-cli | `museav-cli/mark-v3.svg` + `museav-cli/mark-v3-dark.svg` | 待评审 |
+| nativecrew | `nativecrew/logo.svg` | 项目定稿 |
 | plugins | `plugins/mark-v3.svg` + `plugins/mark-v3-dark.svg` | 待评审 |
 | pr-contributor-skill | `pr-contributor-skill/mark-v3.svg` + `pr-contributor-skill/mark-v3-dark.svg` | 待评审 |
 | reel-kit | `reel-kit/mark-v3.svg` + `reel-kit/mark-v3-dark.svg` | 定稿 |
@@ -37,6 +41,7 @@
 | voxflow | `voxflow/mark-v3.svg` + `voxflow/mark-v3-dark.svg` | 定稿 |
 | wallpaper-generator | `wallpaper-generator/mark-v3.svg` + `wallpaper-generator/mark-v3-dark.svg` | 定稿 |
 | webkubor | `webkubor/mark-v3.svg` + `webkubor/mark-v3-dark.svg` | 待评审 |
+| xiaobai-kanban | `xiaobai-kanban/logo.svg` + `xiaobai-kanban/logo-dark.svg` | 网站导航现用标识 |
 
 ## 版本策略
 
@@ -49,13 +54,13 @@
 
 [现役标识评审](/design/logo-review.html)可查看每项的浅底/深底版本与 hex；[交付说明](design/DELIVERY.md)记录色板建议、检查范围与限制。
 
-真实待设计项目见 [18 项设计任务](design/logo-briefs.html)；其中色板均标为待评审建议。`path-guard` 的定位以生产 README 的命令副本诊断为准，`release-sync-skill` 为版本台账同步；`ego-lite-ref` 为上游参照实现，不列入自有品牌委托。
+真实待设计项目见 [设计任务](design/logo-briefs.html)；其中色板均标为待评审建议。`path-guard` 的定位以生产 README 的命令副本诊断为准，`release-sync-skill` 为版本台账同步；`ego-lite-ref` 为上游参照实现，不列入自有品牌委托。
 
 ## 待设计或核验
 
 - **Bloom for Typora**：项目仅有花形 favicon；README 目前展示 banner，需按主题品牌另行确定正式字标或 logo。
-- **Kyvault / xiaobai-kanban / boiling-snow**：README 顶部现有 banner/宣传图，不能仅凭文件名或 alt 文本认定它们是 logo。
-- **有 banner、缺独立 logo**：Kyvault、xiaobai-kanban、Boiling Snow、Bloom for Typora、dsh-bloom-theme、ego-lite-ref。先保留现有 banner；在各项目确定专属视觉后再增补 logo。
+- **Boiling Snow**：README 顶部现有 banner/宣传图，不能仅凭文件名或 alt 文本认定它们是 logo。
+- **有 banner、缺独立 logo**：Boiling Snow、Bloom for Typora、dsh-bloom-theme、ego-lite-ref。先保留现有 banner；在各项目确定专属视觉后再增补 logo。
 - **未在 README 展示标识**：ai-orb、device-passport（已入库，README 仍使用 banner）、dsh-llm-hub（已入库，README 仍使用 R2 banner）。应用内部 favicon 不等同于 README 品牌图。
 - **无可确认源图的自有项目**：ai-sse-kit、cs-mcp、ui-craft、im-notify-kit、mlx-vlm-kit、path-guard、charmoji-sticker-skill、deadcode-reaper-skill、release-sync-skill、writing-standard-skills、suno-publisher、vite-plugin-refresh-guard 等。先保留文本标题，不自动生成相同模板的占位 logo。
 

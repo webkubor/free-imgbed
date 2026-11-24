@@ -1,6 +1,6 @@
 # Image Index
 
-> 快照: 2026-11-24 12:23 UTC ｜ 40 directories, 200 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-24 13:05 UTC ｜ 43 directories, 209 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
@@ -14,15 +14,18 @@
 - [dsh-museav-assets/](dsh-museav-assets/) — 2 images
 - [ego-lite-ref/](ego-lite-ref/) — 2 images
 - [facet/](facet/) — 17 images
-- [fovea/](fovea/) — 8 images
+- [fovea/](fovea/) — 10 images
 - [free-imgbed/](free-imgbed/) — 2 images
+- [harnessweight/](harnessweight/) — 2 images
 - [hypit/](hypit/) — 13 images
+- [kyvault/](kyvault/) — 2 images
 - [lite-browser/](lite-browser/) — 2 images
 - [logo-brand-designer/](logo-brand-designer/) — 2 images
 - [magpie/](magpie/) — 6 images
 - [meridian/](meridian/) — 2 images
 - [museav-ai/](museav-ai/) — 1 images
 - [museav-cli/](museav-cli/) — 5 images
+- [nativecrew/](nativecrew/) — 1 images
 - [person/](person/) — 16 images
 - [plugins/](plugins/) — 2 images
 - [pr-contributor-skill/](pr-contributor-skill/) — 2 images
@@ -41,4 +44,4 @@
 - [web-ui/](web-ui/) — 1 images
 - [webkubor/](webkubor/) — 10 images
 - [xianling-music/](xianling-music/) — 2 images
-- [xiaobai-kanban/](xiaobai-kanban/) — 1 images
+- [xiaobai-kanban/](xiaobai-kanban/) — 3 images

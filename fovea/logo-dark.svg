@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="11.2368 10.7368 110.5263 110.5263" role="img" aria-label="Fovea">
+  <title>Fovea — F of context rows: the old row cut to head and tail, the recent row whole</title>
+  <defs>
+    <linearGradient id="fovea-mark-dark-neon" x1="24" y1="24" x2="104" y2="104" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#00F0FF"/><stop offset="1" stop-color="#7C5CFF"/></linearGradient>
+    <linearGradient id="fovea-mark-dark-tile" x1="0" y1="0" x2="0" y2="128" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#141728"/><stop offset="1" stop-color="#05060B"/></linearGradient>
+  </defs>
+  <g fill="#FF2BD6" transform="translate(5 4)">
+    <rect x="28" y="24" width="22" height="80" rx="4"/><rect x="50" y="24" width="18" height="20" rx="4"/><rect x="82" y="24" width="18" height="20" rx="4"/><rect x="50" y="58" width="42" height="20" rx="4"/>
+  </g>
+  <g fill="url(#fovea-mark-dark-neon)">
+    <rect x="28" y="24" width="22" height="80" rx="4"/><rect x="50" y="24" width="18" height="20" rx="4"/><rect x="82" y="24" width="18" height="20" rx="4"/><rect x="50" y="58" width="42" height="20" rx="4"/>
+  </g>
+</svg>
