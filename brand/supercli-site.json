@@ -1,0 +1,23 @@
+{
+ "id": "supercli-site",
+ "name": "SuperCLI",
+ "sourceRepo": "supercli-site/supercli",
+ "sourceFiles": [
+  "brand.html",
+  "public/brand/supercli-symbol-mono.svg",
+  "public/brand/supercli-symbol-mono-light.svg"
+ ],
+ "asset": "supercli/mark-v3.svg",
+ "darkAsset": "supercli/mark-v3-dark.svg",
+ "tokens": {
+  "primary": "#002FA7",
+  "accent": "#19191D",
+  "onLight": "#002FA7",
+  "onDark": "#EEF1F7",
+  "background": "transparent"
+ },
+ "rationale": "GitHub 组织首页使用 SuperCLI 的折返 S 与输入光标。图床复用项目已有的深浅底透明标识，沿用同一套几何。",
+ "status": "ready",
+ "dir": "supercli",
+ "kind": "organization"
+}

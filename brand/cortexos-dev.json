@@ -1,0 +1,22 @@
+{
+ "id": "cortexos-dev",
+ "name": "CortexOS",
+ "kind": "organization",
+ "sourceRepo": "cortexos-dev/.github",
+ "sourceFiles": [
+  "profile/README.md",
+  "brand/README.md",
+  "brand/mark.svg"
+ ],
+ "asset": "cortexos-dev/logo.svg",
+ "darkAsset": null,
+ "tokens": {
+  "primary": "#4F46E5",
+  "accent": "#5EEAD4",
+  "onLight": "#4F46E5",
+  "onDark": "#4F46E5",
+  "background": "transparent"
+ },
+ "rationale": "组织品牌目录的透明「出框」标志。外框渐变从 #4F46E5 到 #7C3AED，越界块渐变从 #5EEAD4 到 #22D3EE。浅底和深底共用透明标志。图床只扩展透明画布留白，保留原路径和配色。",
+ "status": "ready"
+}

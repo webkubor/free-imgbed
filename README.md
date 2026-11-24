@@ -27,7 +27,7 @@
 
 ## 文档
 
-品牌交付：[新旧 logo 与颜色体系对照](https://imgbed.webkubor.online/design/logo-review.html) · [18 项待设计任务](https://imgbed.webkubor.online/design/logo-briefs.html) · [验收截图](https://imgbed.webkubor.online/design/screenshots/index.html) · [Logo Skill 版本与更新](https://imgbed.webkubor.online/guide/logo-gallery.html#logo-skill-version) · [复用方法](https://github.com/webkubor/logo-brand-designer/blob/main/references/reuse.md) · [交付说明](design/DELIVERY.md)。每个新版都有透明底 1:1 SVG、颜色 token 和设计理念；页面可切深浅背景和尺寸，也可复制完整任务交给自己的设计 Agent。
+品牌交付：[GitHub 组织 Logo](https://imgbed.webkubor.online/guide/logo-gallery.html#github-organizations) · [新旧 logo 与颜色体系对照](https://imgbed.webkubor.online/design/logo-review.html) · [18 项待设计任务](https://imgbed.webkubor.online/design/logo-briefs.html) · [验收截图](https://imgbed.webkubor.online/design/screenshots/index.html) · [Logo Skill 版本与更新](https://imgbed.webkubor.online/guide/logo-gallery.html#logo-skill-version) · [复用方法](https://github.com/webkubor/logo-brand-designer/blob/main/references/reuse.md) · [交付说明](design/DELIVERY.md)。每个新版都有透明底 1:1 SVG、颜色 token 和设计理念；页面可切深浅背景和尺寸，也可复制完整任务交给自己的设计 Agent。
 
 VitePress 教程： [快速开始](docs/guide/getting-started.md) · [命名与链接](docs/guide/naming-and-links.md) · [全局 CLI](docs/guide/cli.md) · [压缩及透明度](docs/guide/compression.md) · [AI Agent 接入](docs/guide/ai-agents.md) · [自定义域名](docs/guide/custom-domain.md) · [引用模板](docs/guide/templates.md)。
 
@@ -37,7 +37,18 @@ VitePress 教程： [快速开始](docs/guide/getting-started.md) · [命名与�
 
 ## 🖼 项目 logo 墙
 
-展示 `brand/*.json` 指定的现役标识；深色主题用 `<picture>` 按系统偏好加载对应 `darkAsset`。旧版 logo 不在图床保留。
+收录 GitHub 组织和项目的现役标识。深色主题用 `<picture>` 按系统偏好加载对应 `darkAsset`。
+
+### GitHub 组织
+
+| 组织 | 标识 | 文件 |
+|---|---|---|
+| [cortexos-dev](https://github.com/cortexos-dev) | <img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/cortexos-dev/logo.svg" width="120" height="120" alt="cortexos-dev logo"> | `cortexos-dev/logo.svg` |
+| [museav-ai](https://github.com/museav-ai) | <img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-ai/logo.svg" width="120" height="120" alt="museav-ai logo"> | `museav-ai/logo.svg` |
+| [supercli-site](https://github.com/supercli-site) | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/supercli/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/supercli/mark-v3.svg" width="120" height="120" alt="supercli-site logo"></picture> | `supercli/mark-v3.svg` |
+| [xianling-music](https://github.com/xianling-music) | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-light.svg" width="120" height="120" alt="xianling-music logo"></picture> | `xianling-music/logo-light.svg` |
+
+### 项目标识
 
 | 项目 | 标识 | 文件 |
 |---|---|---|
@@ -52,7 +63,6 @@ VitePress 教程： [快速开始](docs/guide/getting-started.md) · [命名与�
 | lite-browser | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/lite-browser/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/lite-browser/mark-v3.svg" width="120" height="120" alt="lite-browser logo"></picture> | `lite-browser/mark-v3.svg` |
 | logo-brand-designer | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/logo-brand-designer/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/logo-brand-designer/mark-v3.svg" width="120" height="120" alt="logo-brand-designer logo"></picture> | `logo-brand-designer/mark-v3.svg` |
 | meridian | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/meridian/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/meridian/mark-v3.svg" width="120" height="120" alt="meridian logo"></picture> | `meridian/mark-v3.svg` |
-| museav-ai | <img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-ai/logo.svg" width="120" height="120" alt="museav-ai logo"> | `museav-ai/logo.svg` |
 | museav-cli | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-cli/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-cli/mark-v3.svg" width="120" height="120" alt="museav-cli logo"></picture> | `museav-cli/mark-v3.svg` |
 | plugins | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/plugins/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/plugins/mark-v3.svg" width="120" height="120" alt="plugins logo"></picture> | `plugins/mark-v3.svg` |
 | pr-contributor-skill | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/pr-contributor-skill/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/pr-contributor-skill/mark-v3.svg" width="120" height="120" alt="pr-contributor-skill logo"></picture> | `pr-contributor-skill/mark-v3.svg` |
@@ -64,6 +74,5 @@ VitePress 教程： [快速开始](docs/guide/getting-started.md) · [命名与�
 | voxflow | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/voxflow/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/voxflow/mark-v3.svg" width="120" height="120" alt="voxflow logo"></picture> | `voxflow/mark-v3.svg` |
 | wallpaper-generator | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/wallpaper-generator/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/wallpaper-generator/mark-v3.svg" width="120" height="120" alt="wallpaper-generator logo"></picture> | `wallpaper-generator/mark-v3.svg` |
 | webkubor | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/webkubor/mark-v3-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/webkubor/mark-v3.svg" width="120" height="120" alt="webkubor logo"></picture> | `webkubor/mark-v3.svg` |
-| xianling-music | <picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-dark.svg"><img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-light.svg" width="120" height="120" alt="xianling-music logo"></picture> | `xianling-music/logo-light.svg` |
 
 <!-- logo-gallery:end -->

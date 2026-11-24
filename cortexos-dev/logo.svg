@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 202 202" width="200" height="200" role="img" aria-labelledby="title">
+  <title id="title">CortexOS 出框标志</title>
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4F46E5"/><stop offset="1" stop-color="#7C3AED"/></linearGradient>
+    <linearGradient id="breakout" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5EEAD4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient>
+  </defs>
+  <path fill-rule="evenodd" fill="url(#frame)" d="M20 20 H180 V72 H152 V48 H48 V152 H152 V128 H180 V180 H20 Z"/>
+  <rect x="100" y="78" width="80" height="44" rx="4" fill="url(#breakout)"/>
+</svg>

@@ -2,6 +2,17 @@
 
 本表记录自有项目和组织的**现役标识**。多个项目共用同一标识时，直接引用同一份素材。品牌条目以 `brand/*.json` 为准，画廊、评审页与 README 均由它生成。
 
+## GitHub 组织
+
+| 组织 | 现役标识 |
+|---|---|
+| [cortexos-dev](https://github.com/cortexos-dev) | `cortexos-dev/logo.svg` |
+| [museav-ai](https://github.com/museav-ai) | `museav-ai/logo.svg` |
+| [supercli-site](https://github.com/supercli-site) | `supercli/mark-v3.svg` + `supercli/mark-v3-dark.svg` |
+| [xianling-music](https://github.com/xianling-music) | `xianling-music/logo-light.svg` + `xianling-music/logo-dark.svg` |
+
+## 项目标识
+
 | 项目 | 现役标识 | 状态 |
 |---|---|---|
 | chat-mood-gen | `chat-mood-gen/mark-v3.svg` + `chat-mood-gen/mark-v3-dark.svg` | 定稿 |
@@ -15,7 +26,6 @@
 | lite-browser | `lite-browser/mark-v3.svg` + `lite-browser/mark-v3-dark.svg` | 待评审 |
 | logo-brand-designer | `logo-brand-designer/mark-v3.svg` + `logo-brand-designer/mark-v3-dark.svg` | 待评审 |
 | meridian | `meridian/mark-v3.svg` + `meridian/mark-v3-dark.svg` | 待评审 |
-| museav-ai | `museav-ai/logo.svg` | 官方组织标识 |
 | museav-cli | `museav-cli/mark-v3.svg` + `museav-cli/mark-v3-dark.svg` | 待评审 |
 | plugins | `plugins/mark-v3.svg` + `plugins/mark-v3-dark.svg` | 待评审 |
 | pr-contributor-skill | `pr-contributor-skill/mark-v3.svg` + `pr-contributor-skill/mark-v3-dark.svg` | 待评审 |
@@ -27,7 +37,6 @@
 | voxflow | `voxflow/mark-v3.svg` + `voxflow/mark-v3-dark.svg` | 定稿 |
 | wallpaper-generator | `wallpaper-generator/mark-v3.svg` + `wallpaper-generator/mark-v3-dark.svg` | 定稿 |
 | webkubor | `webkubor/mark-v3.svg` + `webkubor/mark-v3-dark.svg` | 待评审 |
-| xianling-music | `xianling-music/logo-light.svg` + `xianling-music/logo-dark.svg` | 仙灵音乐组织标识 |
 
 ## 版本策略
 

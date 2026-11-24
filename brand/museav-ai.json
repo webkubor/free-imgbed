@@ -16,5 +16,6 @@
   "background": "transparent"
  },
  "rationale": "来自 MUSE AV GitHub 组织介绍页使用的官方标识。图床版保留珊瑚橙标志和原始遮罩，遮罩使用 #000000 与 #FFFFFF。",
- "status": "ready"
+ "status": "ready",
+ "kind": "organization"
 }

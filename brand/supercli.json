@@ -1,7 +1,7 @@
 {
  "id": "supercli",
  "name": "SuperCLI",
- "sourceRepo": "webkubor/supercli",
+ "sourceRepo": "supercli-site/supercli",
  "sourceFiles": [
   "brand.html",
   "public/brand/supercli-symbol-mono.svg",

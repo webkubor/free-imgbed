@@ -20,9 +20,8 @@ from pathlib import Path, PurePosixPath
 ROOT = Path(__file__).resolve().parent.parent
 FIELDS = {"id", "name", "sourceRepo", "sourceFiles", "asset", "darkAsset",
           "tokens", "rationale", "status"}
-# Optional: the top-level directory holding the assets, when the GitHub repo name
-# differs from the brand id (e.g. an obfuscated repo name).
-OPTIONAL_FIELDS = {"dir"}
+# Optional asset directory and gallery category.
+OPTIONAL_FIELDS = {"dir", "kind"}
 TOKEN_FIELDS = {"primary", "accent", "onLight", "onDark", "background"}
 HEX = re.compile(r"#[0-9a-fA-F]{6}\Z")
 # Basic geometry and local gradients/masks are allowed; executable/foreign/font/
@@ -69,6 +68,7 @@ def load_manifests(root=ROOT):
                 f"{path.name}: required fields {sorted(FIELDS)}, optional {sorted(OPTIONAL_FIELDS)}")
         require(isinstance(d["id"], str) and re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", d["id"]), "invalid id")
         require(d["id"] == path.stem and d["id"] not in seen, "id must match unique manifest filename")
+        require(d.get("kind", "project") in ("project", "organization"), "invalid brand kind")
         if "dir" in d:
             require(isinstance(d["dir"], str) and bool(d["dir"].strip())
                     and PurePosixPath(d["dir"]).as_posix() == d["dir"]

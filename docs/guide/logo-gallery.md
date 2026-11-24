@@ -12,13 +12,24 @@ title: 项目 logo 墙
 
 ## 🖼 项目 logo 墙
 
-展示 `brand/*.json` 指定的现役标识；文档随站内主题开关显示对应 `darkAsset`（以根元素 `.dark` 为准）。旧版 logo 不在图床保留。
+收录 GitHub 组织和项目的现役标识。文档随站内主题开关显示对应 `darkAsset`（以根元素 `.dark` 为准）。
 
 <style>
 .brand-gallery-dark { display: none !important; }
 .dark .brand-gallery-light { display: none !important; }
 .dark .brand-gallery-dark { display: inline-block !important; }
 </style>
+
+### GitHub 组织 {#github-organizations}
+
+| 组织 | 标识 | 文件 |
+|---|---|---|
+| [cortexos-dev](https://github.com/cortexos-dev) | <img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/cortexos-dev/logo.svg" width="120" height="120" alt="cortexos-dev logo"> | `cortexos-dev/logo.svg` |
+| [museav-ai](https://github.com/museav-ai) | <img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-ai/logo.svg" width="120" height="120" alt="museav-ai logo"> | `museav-ai/logo.svg` |
+| [supercli-site](https://github.com/supercli-site) | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/supercli/mark-v3.svg" width="120" height="120" alt="supercli-site logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/supercli/mark-v3-dark.svg" width="120" height="120" alt="supercli-site logo"> | `supercli/mark-v3.svg` |
+| [xianling-music](https://github.com/xianling-music) | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-light.svg" width="120" height="120" alt="xianling-music logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-dark.svg" width="120" height="120" alt="xianling-music logo"> | `xianling-music/logo-light.svg` |
+
+### 项目标识
 
 | 项目 | 标识 | 文件 |
 |---|---|---|
@@ -33,7 +44,6 @@ title: 项目 logo 墙
 | lite-browser | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/lite-browser/mark-v3.svg" width="120" height="120" alt="lite-browser logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/lite-browser/mark-v3-dark.svg" width="120" height="120" alt="lite-browser logo"> | `lite-browser/mark-v3.svg` |
 | logo-brand-designer | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/logo-brand-designer/mark-v3.svg" width="120" height="120" alt="logo-brand-designer logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/logo-brand-designer/mark-v3-dark.svg" width="120" height="120" alt="logo-brand-designer logo"> | `logo-brand-designer/mark-v3.svg` |
 | meridian | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/meridian/mark-v3.svg" width="120" height="120" alt="meridian logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/meridian/mark-v3-dark.svg" width="120" height="120" alt="meridian logo"> | `meridian/mark-v3.svg` |
-| museav-ai | <img src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-ai/logo.svg" width="120" height="120" alt="museav-ai logo"> | `museav-ai/logo.svg` |
 | museav-cli | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-cli/mark-v3.svg" width="120" height="120" alt="museav-cli logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/museav-cli/mark-v3-dark.svg" width="120" height="120" alt="museav-cli logo"> | `museav-cli/mark-v3.svg` |
 | plugins | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/plugins/mark-v3.svg" width="120" height="120" alt="plugins logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/plugins/mark-v3-dark.svg" width="120" height="120" alt="plugins logo"> | `plugins/mark-v3.svg` |
 | pr-contributor-skill | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/pr-contributor-skill/mark-v3.svg" width="120" height="120" alt="pr-contributor-skill logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/pr-contributor-skill/mark-v3-dark.svg" width="120" height="120" alt="pr-contributor-skill logo"> | `pr-contributor-skill/mark-v3.svg` |
@@ -45,7 +55,6 @@ title: 项目 logo 墙
 | voxflow | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/voxflow/mark-v3.svg" width="120" height="120" alt="voxflow logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/voxflow/mark-v3-dark.svg" width="120" height="120" alt="voxflow logo"> | `voxflow/mark-v3.svg` |
 | wallpaper-generator | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/wallpaper-generator/mark-v3.svg" width="120" height="120" alt="wallpaper-generator logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/wallpaper-generator/mark-v3-dark.svg" width="120" height="120" alt="wallpaper-generator logo"> | `wallpaper-generator/mark-v3.svg` |
 | webkubor | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/webkubor/mark-v3.svg" width="120" height="120" alt="webkubor logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/webkubor/mark-v3-dark.svg" width="120" height="120" alt="webkubor logo"> | `webkubor/mark-v3.svg` |
-| xianling-music | <img class="brand-gallery-light" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-light.svg" width="120" height="120" alt="xianling-music logo"><img class="brand-gallery-dark" src="https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/xianling-music/logo-dark.svg" width="120" height="120" alt="xianling-music logo"> | `xianling-music/logo-light.svg` |
 
 <!-- logo-gallery:end -->
 

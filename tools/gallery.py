@@ -19,7 +19,7 @@ spec.loader.exec_module(contract)
 def entries():
     manifests = contract.load_manifests()
     asset_dirs = {PurePosixPath(m['asset']).parts[0] for m in manifests}
-    result = [(m['id'], m['asset'], m['darkAsset']) for m in manifests]
+    result = [(m['id'], m['asset'], m['darkAsset'], m.get('kind') == 'organization') for m in manifests]
     for directory in sorted(ROOT.iterdir()):
         if not directory.is_dir() or directory.name.startswith('.') or directory.name in SKIP:
             continue
@@ -34,24 +34,24 @@ def entries():
             if not dark.is_file():
                 dark = directory / 'logo-dark.svg'
             result.append((directory.name, asset.relative_to(ROOT).as_posix(),
-                           dark.relative_to(ROOT).as_posix() if dark.is_file() else None))
+                           dark.relative_to(ROOT).as_posix() if dark.is_file() else None, False))
     return sorted(result)
-
 
 
 def build(site_theme=False):
     behavior = ('文档随站内主题开关显示对应 `darkAsset`（以根元素 `.dark` 为准）'
                 if site_theme else '深色主题用 `<picture>` 按系统偏好加载对应 `darkAsset`')
     lines = [START, '', '## 🖼 项目 logo 墙', '',
-             f'展示 `brand/*.json` 指定的现役标识；{behavior}。旧版 logo 不在图床保留。', '']
+             f'收录 GitHub 组织和项目的现役标识。{behavior}。', '']
     if site_theme:
         lines.extend(['<style>',
                       '.brand-gallery-dark { display: none !important; }',
                       '.dark .brand-gallery-light { display: none !important; }',
                       '.dark .brand-gallery-dark { display: inline-block !important; }',
                       '</style>', ''])
-    lines.extend(['| 项目 | 标识 | 文件 |', '|---|---|---|'])
-    for id_, asset, dark in entries():
+    organization_rows = []
+    project_rows = []
+    for id_, asset, dark, organization in entries():
         image = f'<img src="{BASE}{html.escape(asset)}" width="120" height="120" alt="{html.escape(id_)} logo">'
         if dark:
             if site_theme:
@@ -59,7 +59,13 @@ def build(site_theme=False):
                 image += f'<img class="brand-gallery-dark" src="{BASE}{html.escape(dark)}" width="120" height="120" alt="{html.escape(id_)} logo">'
             else:
                 image = f'<picture><source media="(prefers-color-scheme: dark)" srcset="{BASE}{html.escape(dark)}">{image}</picture>'
-        lines.append(f'| {id_} | {image} | `{asset}` |')
+        label = f'[{id_}](https://github.com/{id_})' if organization else id_
+        rows = organization_rows if organization else project_rows
+        rows.append(f'| {label} | {image} | `{asset}` |')
+    if organization_rows:
+        heading = '### GitHub 组织 {#github-organizations}' if site_theme else '### GitHub 组织'
+        lines.extend([heading, '', '| 组织 | 标识 | 文件 |', '|---|---|---|', *organization_rows, ''])
+    lines.extend(['### 项目标识', '', '| 项目 | 标识 | 文件 |', '|---|---|---|', *project_rows])
     lines.extend(['', END])
     return '\n'.join(lines)
 
@@ -93,7 +99,7 @@ def main():
         print('FAIL gallery stale: ' + ', '.join(stale) + '; run tools/gallery.sh')
         return 1
     print(('PASS gallery freshness' if args.check else 'PASS gallery generated')
-          + ': README.md + docs/guide/logo-gallery.md; ' + str(len(entries())) + ' projects')
+          + ': README.md + docs/guide/logo-gallery.md; ' + str(len(entries())) + ' brands')
     return 0
 
 
