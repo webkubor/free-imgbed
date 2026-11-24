@@ -69,4 +69,9 @@ python3 tools/brand-ui.py --check
 
 `brand/*.json`、项目目录 SVG 与 `design/briefs.json` 是输入；`tools/brand-ui.py` 生成仓内 `design/*.html`，其中嵌入从资产派生的预览，便于直接打开。`docs/package.json` 在开发和构建前执行同一生成器，再复制到被 Git 忽略的 `docs/public/design/`，不手工维护第二份 HTML 或图片。
 
-品牌技能真源为 [本仓 SKILL.md](https://github.com/webkubor/free-imgbed/blob/main/.agents/skills/logo-brand-designer/SKILL.md)。
+## Logo Skill 版本与更新 {#logo-skill-version}
+
+`logo-brand-designer` 在独立仓库维护。源码版本由 `SKILL.md` 的 `version` 字段记录，正式发布版本以 GitHub Release 的标签为准。
+
+- 源码查阅：[当前 `SKILL.md`](https://github.com/webkubor/logo-brand-designer/blob/main/SKILL.md) · [规则更新记录](https://github.com/webkubor/logo-brand-designer/commits/main/SKILL.md)。本次核对的源码是 [`0.7.2`](https://github.com/webkubor/logo-brand-designer/blob/98c4d1cf76187d82c63bc3a64c00b22badc46fa1/SKILL.md)。
+- 正式发布：[![Logo Skill 最新正式版本](https://img.shields.io/github/v/release/webkubor/logo-brand-designer?label=Logo%20Skill)](https://github.com/webkubor/logo-brand-designer/releases/latest) · [历次发布与说明](https://github.com/webkubor/logo-brand-designer/releases)。
