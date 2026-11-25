@@ -9,6 +9,7 @@ from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "social-icons"
 NOTES = ["pack.json", "NOTICE.md", "LICENSE-simple-icons.md", "DISCLAIMER-simple-icons.md"]
+COLOR_NOTES = [*NOTES, "pack-v2.json", "BRAND-COLORS.md"]
 
 
 def icon_files(manifest):
@@ -36,14 +37,17 @@ def build_zip(version, notes, icons):
 
 
 def main():
-    legacy_version, legacy_icons = icon_files("pack.json")
-    version, icons = icon_files("pack-v2.json")
+    releases = [
+        (*icon_files("pack.json"), NOTES),
+        (*icon_files("pack-v2.json"), COLOR_NOTES),
+        (*icon_files("pack-v3.json"), [*COLOR_NOTES, "pack-v3.json", "DOMESTIC-SOURCES.md"]),
+    ]
     files = {p.relative_to(ASSETS).as_posix() for p in ASSETS.rglob("*") if p.suffix in {".svg", ".png"}}
-    if set(icons) != files or not set(legacy_icons) <= files:
+    if set(releases[-1][1]) != files or any(not set(icons) <= files for _, icons, _ in releases):
         raise ValueError("Icon files must match the manifests")
 
-    build_zip(legacy_version, NOTES, legacy_icons)
-    build_zip(version, [*NOTES, "pack-v2.json", "BRAND-COLORS.md"], icons)
+    for version, icons, notes in releases:
+        build_zip(version, notes, icons)
 
 
 if __name__ == "__main__":

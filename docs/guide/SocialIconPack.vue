@@ -1,9 +1,16 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { withBase } from 'vitepress'
-import pack from '../../social-icons/pack-v2.json'
+import pack from '../../social-icons/pack-v3.json'
 
-type Icon = { name: string; file: string; colorFile?: string; brandColors: string[] }
+type Icon = {
+  name: string
+  file: string
+  colorFile?: string
+  brandColors: string[]
+  aliases?: string[]
+  darkPreview?: boolean
+}
 type Style = 'brand' | 'mono'
 const iconBase = 'https://imgbed.webkubor.online/social-icons/'
 const download = withBase(`/downloads/social-icons-v${pack.version}.zip`)
@@ -11,6 +18,15 @@ const style = ref<Style>('brand')
 const copyStatus = ref('')
 const copied = ref('')
 const manualLink = ref('')
+const search = ref('')
+const term = computed(() => search.value.trim().toLowerCase())
+const visibleGroups = computed(() => pack.groups
+  .map(group => ({
+    ...group,
+    icons: group.icons.filter((icon: Icon) => [icon.name, icon.file, ...(icon.aliases ?? [])]
+      .some(value => value.toLowerCase().includes(term.value))),
+  }))
+  .filter(group => group.icons.length > 0))
 const iconUrl = (file: string) => iconBase + file
 const shownFile = (icon: Icon) => style.value === 'brand' ? icon.colorFile ?? icon.file : icon.file
 
@@ -38,21 +54,29 @@ async function copyLink(icon: Icon) {
 </script>
 
 <template>
-  <p><a :href="download" download>下载 ZIP 图标包（含品牌色与单色）</a></p>
+  <p><a :href="download" download>下载 ZIP 图标包 v{{ pack.version }}</a></p>
+  <label class="icon-search">
+    <span>搜索图标</span>
+    <input v-model="search" type="search" placeholder="搜平台名，如掘金、支付宝">
+  </label>
   <div class="icon-actions icon-mode" role="group" aria-label="图标配色">
     <button type="button" :aria-pressed="style === 'brand'" @click="selectStyle('brand')">品牌色</button>
     <button type="button" :aria-pressed="style === 'mono'" @click="selectStyle('mono')">单色 SVG</button>
   </div>
+  <nav v-if="!term" class="icon-categories" aria-label="图标分类">
+    <a v-for="group in pack.groups" :key="group.id" :href="`#${group.id}`">{{ group.name }}</a>
+  </nav>
   <p v-if="manualLink" role="status">
     请手动复制 <input :value="manualLink" readonly aria-label="图标直链" @focus="($event.target as HTMLInputElement).select()">
   </p>
   <span class="copy-status" role="status">{{ copyStatus }}</span>
 
-  <section v-for="group in pack.groups" :key="group.name">
+  <p v-if="!visibleGroups.length" role="status">没有找到匹配的图标。可以换个名称再搜。</p>
+  <section v-for="group in visibleGroups" :id="group.id" :key="group.id" class="icon-group">
     <h2>{{ group.name }}</h2>
     <ul class="icon-grid">
       <li v-for="icon in group.icons" :key="icon.file" class="icon-card">
-        <img :src="iconUrl(shownFile(icon))" class="icon-preview" width="40" height="40" alt="">
+        <img :src="iconUrl(shownFile(icon))" class="icon-preview" :class="{ 'dark-preview': style === 'brand' && icon.darkPreview }" width="40" height="40" alt="">
         <strong>{{ icon.name }}</strong>
         <div class="brand-colors" :aria-label="`${icon.name} 品牌色`">
           <code v-for="color in icon.brandColors" :key="color" :style="{ '--swatch': color }">{{ color }}</code>
@@ -69,6 +93,37 @@ async function copyLink(icon: Icon) {
 </template>
 
 <style scoped>
+.icon-search {
+  display: grid;
+  max-width: 24rem;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon-search input {
+  width: 100%;
+  padding: 0.375rem 0.625rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 0.375rem;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+}
+
+.icon-search input:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+}
+
+.icon-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.375rem 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.icon-group {
+  scroll-margin-top: calc(var(--vp-nav-height) + 2.75rem);
+}
+
 .icon-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
@@ -96,6 +151,10 @@ async function copyLink(icon: Icon) {
   object-fit: contain;
   border-radius: 0.5rem;
   background: var(--vp-c-white);
+}
+
+.icon-preview.dark-preview {
+  background: var(--vp-c-black);
 }
 
 .icon-actions {

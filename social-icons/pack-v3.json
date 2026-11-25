@@ -1,0 +1,782 @@
+{
+  "version": 3,
+  "groups": [
+    {
+      "id": "social",
+      "name": "社交与内容",
+      "icons": [
+        {
+          "name": "微信",
+          "file": "wechat.svg",
+          "source": "https://wechat.design/brand/main-brand",
+          "brandColors": [
+            "#07C160"
+          ],
+          "colorFile": "color/wechat.svg",
+          "aliases": [
+            "weixin",
+            "WeChat"
+          ]
+        },
+        {
+          "name": "QQ",
+          "file": "qq.svg",
+          "source": "https://en.wikipedia.org/wiki/File:Tencent_QQ.svg",
+          "brandColors": [
+            "#1EBAFC"
+          ],
+          "colorFile": "color/qq.svg",
+          "aliases": [
+            "腾讯QQ"
+          ]
+        },
+        {
+          "name": "小红书",
+          "file": "xiaohongshu.svg",
+          "source": "https://pro.xiaohongshu.com",
+          "brandColors": [
+            "#FF2442"
+          ],
+          "colorFile": "color/xiaohongshu.svg",
+          "aliases": [
+            "REDnote",
+            "小红书"
+          ]
+        },
+        {
+          "name": "抖音",
+          "file": "douyin.png",
+          "source": "https://www.douyin.com/favicon.ico",
+          "brandColors": [
+            "#000000",
+            "#00FAF0",
+            "#FF0050"
+          ],
+          "aliases": [
+            "Douyin"
+          ]
+        },
+        {
+          "name": "微博",
+          "file": "sinaweibo.svg",
+          "source": "https://en.wikipedia.org/wiki/Sina_Weibo",
+          "brandColors": [
+            "#E6162D"
+          ],
+          "colorFile": "color/sinaweibo.svg",
+          "aliases": [
+            "Weibo",
+            "新浪微博"
+          ]
+        },
+        {
+          "name": "快手",
+          "file": "kuaishou.svg",
+          "source": "https://www.kuaishou.com/official/material-lib",
+          "brandColors": [
+            "#FF4906"
+          ],
+          "colorFile": "color/kuaishou.svg",
+          "aliases": [
+            "Kuaishou",
+            "Kwai"
+          ]
+        },
+        {
+          "name": "知乎",
+          "file": "zhihu.svg",
+          "source": "https://www.zhihu.com",
+          "brandColors": [
+            "#0084FF"
+          ],
+          "colorFile": "color/zhihu.svg",
+          "aliases": [
+            "Zhihu"
+          ]
+        },
+        {
+          "name": "今日头条",
+          "file": "toutiao.png",
+          "source": "https://sf3-cdn-tos.douyinstatic.com/obj/eden-cn/uhbfnupkbps/toutiao_favicon.ico",
+          "brandColors": [
+            "#FF373C"
+          ],
+          "aliases": [
+            "Toutiao"
+          ]
+        },
+        {
+          "name": "百度",
+          "file": "baidu.svg",
+          "source": "https://www.baidu.com",
+          "brandColors": [
+            "#2932E1"
+          ],
+          "colorFile": "color/baidu.svg",
+          "aliases": [
+            "Baidu"
+          ]
+        },
+        {
+          "name": "夸克",
+          "file": "quark.png",
+          "source": "https://gw.alicdn.com/imgextra/i3/O1CN018r2tKf28YP7ev0fPF_!!6000000007944-2-tps-48-48.png",
+          "brandColors": [
+            "#185AFB"
+          ],
+          "aliases": [
+            "Quark"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name": "影音娱乐",
+      "icons": [
+        {
+          "name": "哔哩哔哩",
+          "file": "bilibili.svg",
+          "source": "https://www.bilibili.com",
+          "brandColors": [
+            "#00A1D6"
+          ],
+          "colorFile": "color/bilibili.svg",
+          "aliases": [
+            "哔哩哔哩",
+            "B站"
+          ]
+        },
+        {
+          "name": "网易云音乐",
+          "file": "neteasecloudmusic.svg",
+          "source": "https://y.music.163.com/m",
+          "brandColors": [
+            "#D43C33"
+          ],
+          "colorFile": "color/neteasecloudmusic.svg",
+          "aliases": [
+            "网易云",
+            "NetEase Cloud Music"
+          ]
+        },
+        {
+          "name": "QQ 音乐",
+          "file": "qqmusic.png",
+          "source": "https://y.qq.com/favicon.ico?max_age=2592000",
+          "brandColors": [
+            "#FFDC01",
+            "#1DC076"
+          ],
+          "aliases": [
+            "QQ音乐"
+          ]
+        },
+        {
+          "name": "腾讯视频",
+          "file": "tencentvideo.png",
+          "source": "https://vfiles.gtimg.cn/wuji_dashboard/xy/starter/4ea79867.png",
+          "brandColors": [
+            "#009AFF",
+            "#43E700",
+            "#FF8800"
+          ],
+          "aliases": [
+            "Tencent Video"
+          ]
+        },
+        {
+          "name": "爱奇艺",
+          "file": "iqiyi.png",
+          "source": "https://www.iqiyi.com/favicon.ico",
+          "brandColors": [
+            "#2EEA7F"
+          ],
+          "aliases": [
+            "iQIYI"
+          ]
+        },
+        {
+          "name": "优酷",
+          "file": "youku.png",
+          "source": "https://img.alicdn.com/imgextra/i2/O1CN01BeAcgL1ywY0G5nSn8_!!6000000006643-2-tps-195-195.png",
+          "brandColors": [
+            "#00C1FF",
+            "#FF8000"
+          ],
+          "aliases": [
+            "Youku"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "payment",
+      "name": "支付与购物",
+      "icons": [
+        {
+          "name": "支付宝",
+          "file": "alipay.svg",
+          "source": "https://global.alipay.com/docs/ac/website_hk/design",
+          "brandColors": [
+            "#1677FF"
+          ],
+          "colorFile": "color/alipay.svg",
+          "aliases": [
+            "Alipay",
+            "支付寶"
+          ]
+        },
+        {
+          "name": "微信支付",
+          "file": "wechatpay.png",
+          "source": "https://gtimg.wechatpay.cn/core/favicon.ico",
+          "brandColors": [
+            "#1AAD19"
+          ],
+          "aliases": [
+            "WeChat Pay",
+            "Weixin Pay"
+          ]
+        },
+        {
+          "name": "银联",
+          "file": "unionpay.svg",
+          "source": "https://commons.wikimedia.org/wiki/File:UnionPay_logo.svg",
+          "brandColors": [
+            "#E21836",
+            "#00447C",
+            "#007B84"
+          ],
+          "aliases": [
+            "中国银联",
+            "UnionPay"
+          ]
+        },
+        {
+          "name": "云闪付",
+          "file": "cloudquickpass.png",
+          "source": "https://apps.apple.com/cn/app/id600273928",
+          "brandColors": [
+            "#F92E20"
+          ],
+          "aliases": [
+            "Cloud QuickPass",
+            "云闪付 App"
+          ]
+        },
+        {
+          "name": "淘宝",
+          "file": "taobao.svg",
+          "source": "https://www.alibabagroup.com/en/ir/reports",
+          "brandColors": [
+            "#E94F20"
+          ],
+          "colorFile": "color/taobao.svg",
+          "aliases": [
+            "Taobao"
+          ]
+        },
+        {
+          "name": "天猫",
+          "file": "tmall.svg",
+          "source": "https://commons.wikimedia.org/wiki/File:Tmall_logo.svg",
+          "brandColors": [
+            "#FF0036"
+          ],
+          "aliases": [
+            "Tmall"
+          ]
+        },
+        {
+          "name": "京东",
+          "file": "jingdong.png",
+          "source": "https://storage.360buyimg.com/retail-mall/mall-common-component/favicon.ico",
+          "brandColors": [
+            "#FF0400"
+          ],
+          "aliases": [
+            "JD.com",
+            "JD"
+          ]
+        },
+        {
+          "name": "拼多多",
+          "file": "pinduoduo.png",
+          "source": "https://www.yangkeduo.com/favicon.png",
+          "brandColors": [
+            "#E02E24"
+          ],
+          "aliases": [
+            "Pinduoduo",
+            "PDD"
+          ]
+        },
+        {
+          "name": "美团",
+          "file": "meituan.svg",
+          "source": "https://www.meituan.com/media",
+          "brandColors": [
+            "#FFD100"
+          ],
+          "colorFile": "color/meituan.svg",
+          "aliases": [
+            "Meituan"
+          ],
+          "darkPreview": true
+        },
+        {
+          "name": "大众点评",
+          "file": "dazhongdianping.svg",
+          "source": "https://www.meituan.com/media",
+          "brandColors": [
+            "#FF6633"
+          ],
+          "colorFile": "color/dazhongdianping.svg",
+          "aliases": [
+            "Dianping"
+          ]
+        },
+        {
+          "name": "淘宝闪购",
+          "file": "eleme.png",
+          "source": "https://img.alicdn.com/imgextra/i4/O1CN010Mtffn24QO3fOPxlq_!!6000000007385-2-tps-96-96.png",
+          "brandColors": [
+            "#FF6200"
+          ],
+          "aliases": [
+            "饿了么",
+            "Ele.me",
+            "Eleme"
+          ]
+        },
+        {
+          "name": "闲鱼",
+          "file": "xianyu.png",
+          "source": "https://img.alicdn.com/tfs/TB19WObTNv1gK0jSZFFXXb0sXXa-144-144.png",
+          "brandColors": [
+            "#FFE60F"
+          ],
+          "aliases": [
+            "Xianyu",
+            "Goofish"
+          ]
+        },
+        {
+          "name": "什么值得买",
+          "file": "smzdm.png",
+          "source": "https://www.smzdm.com/favicon.ico",
+          "brandColors": [
+            "#FA0F00"
+          ],
+          "aliases": [
+            "SMZDM",
+            "值得买"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "work-travel",
+      "name": "办公与出行",
+      "icons": [
+        {
+          "name": "飞书",
+          "file": "feishu.png",
+          "source": "https://www.feishu.cn/favicon.ico",
+          "brandColors": [
+            "#3370FF",
+            "#00D6B9",
+            "#133C9A"
+          ],
+          "aliases": [
+            "Feishu",
+            "Lark"
+          ]
+        },
+        {
+          "name": "钉钉",
+          "file": "dingtalk.png",
+          "source": "https://gw.alicdn.com/imgextra/i3/O1CN014ZbI6ZTEhdC0ttN2_!!6000000003783-2-tps-444-444.png",
+          "brandColors": [
+            "#005FFF"
+          ],
+          "aliases": [
+            "DingTalk"
+          ]
+        },
+        {
+          "name": "企业微信",
+          "file": "wecom.png",
+          "source": "https://wwcdn.weixin.qq.com/node/wwnl/wwnl/style/images/independent/favicon/favicon_16h$faede2cd.png",
+          "brandColors": [
+            "#0082EF",
+            "#FB6500"
+          ],
+          "aliases": [
+            "WeCom",
+            "WeChat Work"
+          ]
+        },
+        {
+          "name": "腾讯会议",
+          "file": "tencentmeeting.png",
+          "source": "https://meeting.tencent.com/favicon.ico",
+          "brandColors": [
+            "#0499FD"
+          ],
+          "aliases": [
+            "Tencent Meeting"
+          ]
+        },
+        {
+          "name": "WPS Office",
+          "file": "wps.png",
+          "source": "https://www.wps.cn/favicon.ico",
+          "brandColors": [
+            "#060101"
+          ],
+          "aliases": [
+            "WPS",
+            "金山办公"
+          ]
+        },
+        {
+          "name": "QQ 邮箱",
+          "file": "qqmail.png",
+          "source": "https://res.wx.qq.com/t/webmail/webmail/res/images/qqmail_favicon_16h.bc34dcb.png",
+          "brandColors": [
+            "#2099DF",
+            "#7AC31D"
+          ],
+          "aliases": [
+            "QQ邮箱",
+            "QQ Mail"
+          ]
+        },
+        {
+          "name": "语雀",
+          "file": "yuque.svg",
+          "source": "https://mdn.alipayobjects.com/huamei_0prmtq/afts/img/A*sRUdR543RjcAAAAAAAAAAAAADvuFAQ/original",
+          "brandColors": [
+            "#07B26A",
+            "#7BD26A"
+          ],
+          "aliases": [
+            "Yuque"
+          ]
+        },
+        {
+          "name": "高德地图",
+          "file": "amap.png",
+          "source": "https://a.amap.com/pc/static/favicon.ico",
+          "brandColors": [
+            "#0085FE",
+            "#C3F99D"
+          ],
+          "aliases": [
+            "高德",
+            "AMap",
+            "AutoNavi"
+          ]
+        },
+        {
+          "name": "百度地图",
+          "file": "baidumaps.png",
+          "source": "https://map.baidu.com/favicon.ico",
+          "brandColors": [
+            "#F72C30"
+          ],
+          "aliases": [
+            "Baidu Maps"
+          ]
+        },
+        {
+          "name": "滴滴出行",
+          "file": "didi.png",
+          "source": "https://website.didiglobal.com/DDlogo.ico",
+          "brandColors": [
+            "#FF6400"
+          ],
+          "aliases": [
+            "滴滴",
+            "DiDi"
+          ]
+        },
+        {
+          "name": "携程",
+          "file": "ctrip.png",
+          "source": "https://www.ctrip.com/favicon.ico",
+          "brandColors": [
+            "#2577E3"
+          ],
+          "aliases": [
+            "Ctrip"
+          ]
+        },
+        {
+          "name": "铁路 12306",
+          "file": "railway12306.png",
+          "source": "https://apps.apple.com/cn/app/id564818797",
+          "brandColors": [
+            "#1F85CD",
+            "#FF2500"
+          ],
+          "aliases": [
+            "铁路12306",
+            "中国铁路",
+            "12306"
+          ]
+        },
+        {
+          "name": "顺丰速运",
+          "file": "sfexpress.png",
+          "source": "https://www.sf-express.com/favicon.ico",
+          "brandColors": [
+            "#000000",
+            "#C21728"
+          ],
+          "aliases": [
+            "顺丰",
+            "SF Express"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "developer",
+      "name": "开发与云服务",
+      "icons": [
+        {
+          "name": "掘金",
+          "file": "juejin.svg",
+          "source": "https://juejin.cn",
+          "brandColors": [
+            "#007FFF"
+          ],
+          "colorFile": "color/juejin.svg",
+          "aliases": [
+            "Juejin",
+            "稀土掘金"
+          ]
+        },
+        {
+          "name": "CSDN",
+          "file": "csdn.svg",
+          "source": "https://www.csdn.net/company/index.html",
+          "brandColors": [
+            "#FC5531"
+          ],
+          "colorFile": "color/csdn.svg",
+          "aliases": [
+            "中国软件开发联盟"
+          ]
+        },
+        {
+          "name": "Gitee",
+          "file": "gitee.svg",
+          "source": "https://gitee.com/about_us",
+          "brandColors": [
+            "#C71D23"
+          ],
+          "colorFile": "color/gitee.svg",
+          "aliases": [
+            "码云"
+          ]
+        },
+        {
+          "name": "V2EX",
+          "file": "v2ex.svg",
+          "source": "https://www.v2ex.com",
+          "brandColors": [
+            "#1F1F1F"
+          ],
+          "colorFile": "color/v2ex.svg"
+        },
+        {
+          "name": "阿里云",
+          "file": "alibabacloud.svg",
+          "source": "https://www.alibabagroup.com/en/ir/reports",
+          "brandColors": [
+            "#FF6A00"
+          ],
+          "colorFile": "color/alibabacloud.svg",
+          "aliases": [
+            "Aliyun",
+            "Alibaba Cloud"
+          ]
+        },
+        {
+          "name": "腾讯云",
+          "file": "tencentcloud.png",
+          "source": "https://cloudcache.tencent-cloud.com/qcloud/favicon.ico?t=201902181234",
+          "brandColors": [
+            "#00A3FF",
+            "#00C8DC",
+            "#006EFF"
+          ],
+          "aliases": [
+            "Tencent Cloud"
+          ]
+        },
+        {
+          "name": "DeepSeek",
+          "file": "deepseek.svg",
+          "source": "https://www.deepseek.com",
+          "brandColors": [
+            "#5786FE"
+          ],
+          "colorFile": "color/deepseek.svg",
+          "aliases": [
+            "深度求索"
+          ]
+        },
+        {
+          "name": "通义千问",
+          "file": "qwen.svg",
+          "source": "https://qwen.ai",
+          "brandColors": [
+            "#6950EF"
+          ],
+          "colorFile": "color/qwen.svg",
+          "aliases": [
+            "Qwen",
+            "通义"
+          ]
+        },
+        {
+          "name": "豆包",
+          "file": "doubao.png",
+          "source": "https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/doubao_avatar_red_favicon.png",
+          "brandColors": [
+            "#CAE4FF"
+          ],
+          "aliases": [
+            "Doubao"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "international",
+      "name": "海外平台",
+      "icons": [
+        {
+          "name": "Google",
+          "file": "google.svg",
+          "source": "https://developers.google.com/identity/branding-guidelines",
+          "colorFile": "color/google.svg",
+          "brandColors": [
+            "#4285F4",
+            "#EA4335",
+            "#FBBC05",
+            "#34A853"
+          ]
+        },
+        {
+          "name": "GitHub",
+          "file": "github.svg",
+          "source": "https://github.com/logos",
+          "brandColors": [
+            "#181717"
+          ],
+          "colorFile": "color/github.svg"
+        },
+        {
+          "name": "Discord",
+          "file": "discord.svg",
+          "source": "https://discord.com/branding",
+          "brandColors": [
+            "#5865F2"
+          ],
+          "colorFile": "color/discord.svg"
+        },
+        {
+          "name": "X（推特）",
+          "file": "x.svg",
+          "source": "https://about.x.com/en/who-we-are/brand-toolkit",
+          "brandColors": [
+            "#000000"
+          ],
+          "aliases": [
+            "Twitter",
+            "推特"
+          ]
+        },
+        {
+          "name": "YouTube",
+          "file": "youtube.svg",
+          "source": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+          "brandColors": [
+            "#FF0000"
+          ],
+          "colorFile": "color/youtube.svg"
+        },
+        {
+          "name": "Instagram",
+          "file": "instagram.svg",
+          "source": "https://about.meta.com/brand/resources/instagram",
+          "brandColors": [
+            "#FF0069"
+          ],
+          "colorFile": "color/instagram.svg"
+        },
+        {
+          "name": "Threads",
+          "file": "threads.svg",
+          "source": "https://www.meta.com/brand/resources/instagram/threads",
+          "brandColors": [
+            "#000000"
+          ]
+        },
+        {
+          "name": "Bluesky",
+          "file": "bluesky.svg",
+          "source": "https://bsky.social/about/blog/press-faq",
+          "brandColors": [
+            "#1185FE"
+          ],
+          "colorFile": "color/bluesky.svg"
+        },
+        {
+          "name": "Telegram",
+          "file": "telegram.svg",
+          "source": "https://telegram.org/tour/screenshots",
+          "brandColors": [
+            "#26A5E4"
+          ],
+          "colorFile": "color/telegram.svg"
+        },
+        {
+          "name": "Reddit",
+          "file": "reddit.svg",
+          "source": "https://www.redditinc.com/brand",
+          "brandColors": [
+            "#FF4500"
+          ],
+          "colorFile": "color/reddit.svg"
+        },
+        {
+          "name": "Facebook",
+          "file": "facebook.svg",
+          "source": "https://about.meta.com/brand/resources/facebook/logo",
+          "brandColors": [
+            "#0866FF"
+          ],
+          "colorFile": "color/facebook.svg",
+          "aliases": [
+            "脸书"
+          ]
+        },
+        {
+          "name": "TikTok",
+          "file": "tiktok.svg",
+          "source": "https://tiktok.com",
+          "brandColors": [
+            "#000000"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises'
 import { expect, test, type Page } from '@playwright/test'
-import pack from '../../social-icons/pack-v2.json' with { type: 'json' }
+import pack from '../../social-icons/pack-v3.json' with { type: 'json' }
 
 const guide = '/guide/social-icons.html'
 const iconBase = 'https://imgbed.webkubor.online/social-icons/'
@@ -16,9 +16,9 @@ test.beforeEach(async ({ context, baseURL }) => {
   })
 })
 
-async function expectLoadedIcons(page: Page) {
+async function expectLoadedIcons(page: Page, count = total) {
   const icons = page.locator('.icon-preview')
-  await expect(icons).toHaveCount(total)
+  await expect(icons).toHaveCount(count)
   await expect.poll(() => icons.evaluateAll(images =>
     images.every(image => image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0),
   )).toBe(true)
@@ -31,6 +31,29 @@ test('desktop: brand icons, palette, clipboard, and ZIP', async ({ page, context
   await page.goto('/')
   await page.getByRole('link', { name: '浏览图标包', exact: true }).click()
   await expect(page).toHaveURL(new RegExp(`${guide}$`))
+  await expectLoadedIcons(page)
+
+  const payment = page.getByRole('navigation', { name: '图标分类' })
+    .getByRole('link', { name: '支付与购物' })
+  await payment.click()
+  await expect(page).toHaveURL(/#payment$/)
+  await expect(page.locator('#payment').getByText('支付宝', { exact: true })).toBeVisible()
+  const search = page.getByRole('searchbox', { name: '搜索图标' })
+  await search.fill('掘金')
+  await expectLoadedIcons(page, 1)
+  await expect(page.getByRole('link', { name: '打开 掘金 图标' }))
+    .toHaveAttribute('href', `${iconBase}color/juejin.svg`)
+  await expect(page.getByText('#007FFF', { exact: true })).toBeVisible()
+  await search.fill('支付宝')
+  await expectLoadedIcons(page, 1)
+  await search.fill('ALIPAY')
+  await expectLoadedIcons(page, 1)
+  await expect(page.getByRole('link', { name: '打开 支付宝 图标' }))
+    .toHaveAttribute('href', `${iconBase}color/alipay.svg`)
+  await expect(page.getByText('#1677FF', { exact: true })).toBeVisible()
+  await search.fill('no-platform-matches')
+  await expect(page.getByText('没有找到匹配的图标。', { exact: false })).toBeVisible()
+  await search.fill('')
   await expectLoadedIcons(page)
 
   const brand = page.getByRole('button', { name: '品牌色', exact: true })
