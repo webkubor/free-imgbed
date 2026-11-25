@@ -7,9 +7,11 @@
     "assets:prepare": "pnpm run brand:prepare && python3 ../tools/build-icon-pack.py",
     "dev": "pnpm run assets:prepare && vitepress dev",
     "build": "pnpm run assets:prepare && vitepress build",
+    "ui:check": "bash ../tools/mirror-doc-assets.sh && playwright test",
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@playwright/test": "1.65.1",
     "vitepress": "^1.6.3"
   },
   "pnpm": {

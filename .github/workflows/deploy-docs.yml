@@ -3,15 +3,19 @@ name: deploy-docs
 on:
   push:
     branches: [main]      # 无 paths 过滤：站点会镜像图片目录，任何素材变更都需重新部署
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'social-icons/**'
+      - 'tools/**'
+      - '.github/workflows/deploy-docs.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.event.pull_request.number || 'main' }}
   cancel-in-progress: false
 
 jobs:
@@ -29,24 +33,29 @@ jobs:
           cache-dependency-path: docs/pnpm-lock.yaml
       - run: pnpm --dir docs install --frozen-lockfile
       - run: pnpm --dir docs build
-      - name: 镜像图片目录到站点（自有域名直出图片）
-        run: |
-          cd "$GITHUB_WORKSPACE"
-          for d in */; do
-            d="${d%/}"
-            case "$d" in docs|web|tools|node_modules|design|brand) continue ;; esac
-            if find "$d" -type f | grep -qiE '\.(png|jpe?g|webp|gif|svg|bmp|mp4|mov|webm|avif)$'; then
-              cp -r "$d" docs/.vitepress/dist/
-              echo "  + $d/"
-            fi
-          done
+      - run: pnpm --dir docs exec playwright install --with-deps --only-shell chromium
+      - name: 浏览器 UI 检查
+        run: pnpm --dir docs ui:check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ui-check
+          path: docs/.vitepress/ui-check/
+          include-hidden-files: true
+          if-no-files-found: ignore
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
         with:
           path: docs/.vitepress/dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

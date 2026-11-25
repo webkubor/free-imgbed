@@ -4,6 +4,7 @@ node_modules/
 docs/node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
+docs/.vitepress/ui-check/
 docs/public/design/
 docs/public/downloads/social-icons-v*.zip
 __pycache__/
