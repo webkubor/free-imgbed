@@ -22,6 +22,13 @@ async function expectLoadedIcons(page: Page, count = total) {
   await expect.poll(() => icons.evaluateAll(images =>
     images.every(image => image instanceof HTMLImageElement && image.complete && image.naturalWidth > 0),
   )).toBe(true)
+  const sizes = await icons.evaluateAll(images =>
+    images.map(image => {
+      const { width, height } = image.getBoundingClientRect()
+      return [width, height]
+    }),
+  )
+  expect(sizes).toEqual(Array.from({ length: count }, () => [40, 40]))
 }
 
 test('desktop: brand icons, palette, clipboard, and ZIP', async ({ page, context }, testInfo) => {

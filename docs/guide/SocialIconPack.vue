@@ -147,6 +147,8 @@ async function copyLink(icon: Icon) {
 
 .icon-preview {
   box-sizing: border-box;
+  width: 40px;
+  height: 40px;
   padding: 0.5rem;
   object-fit: contain;
   border-radius: 0.5rem;
