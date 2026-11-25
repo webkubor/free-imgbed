@@ -79,6 +79,8 @@ async function copyLink(icon: Icon) {
 
 .icon-card {
   display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  align-items: start;
   justify-items: start;
   gap: 0.5rem;
   margin: 0;
@@ -127,20 +129,22 @@ async function copyLink(icon: Icon) {
 .brand-colors {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   gap: 0.25rem;
 }
 
 .brand-colors code {
-  padding: 0.125rem 0.25rem;
+  padding: 0.125rem 0.1875rem;
   font-size: 0.75rem;
+  white-space: nowrap;
   color: var(--vp-c-text-2);
 }
 
 .brand-colors code::before {
   display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  margin-right: 0.25rem;
+  width: 0.375rem;
+  height: 0.375rem;
+  margin-right: 0.1875rem;
   border: 1px solid var(--vp-c-divider);
   border-radius: 50%;
   background: var(--swatch);
