@@ -1,5 +1,5 @@
 ---
-description: 小红书、X、微信、抖音、B 站和 YouTube 等社交平台图标，提供 SVG 直链、预览和 ZIP 下载。
+description: 小红书、X、Google、GitHub 和 Discord 等平台图标，提供品牌色、单色 SVG、直链和 ZIP 下载。
 ---
 
 <script setup>
@@ -8,10 +8,10 @@ import SocialIconPack from './SocialIconPack.vue'
 
 # 社交平台图标包
 
-给 README、导航和社交账号入口用的常用平台图标。可单独打开原图、复制直链或整包下载。
+给 README、导航和社交账号入口用的常用平台图标。可查看品牌色值、切换单色 SVG、复制直链或整包下载。
 
 <SocialIconPack />
 
 ## 来源与使用
 
-SVG 整理自 [Simple Icons 16.38.1](https://github.com/simple-icons/simple-icons/tree/16.38.1)，抖音为官网图标转出的 PNG。使用时请遵循各平台的品牌规范。[查看素材来源与授权说明](https://github.com/webkubor/free-imgbed/blob/main/social-icons/NOTICE.md)
+Google 使用官方四色 G。其他 SVG 以 Simple Icons 的图形和品牌主色为基础，X、Threads 等采用黑色。抖音使用官网 PNG。[查看品牌色来源与使用说明](https://github.com/webkubor/free-imgbed/blob/main/social-icons/BRAND-COLORS.md)

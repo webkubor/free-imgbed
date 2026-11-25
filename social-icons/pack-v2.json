@@ -1,0 +1,178 @@
+{
+  "version": 2,
+  "groups": [
+    {
+      "name": "国内平台",
+      "icons": [
+        {
+          "name": "小红书",
+          "file": "xiaohongshu.svg",
+          "source": "https://pro.xiaohongshu.com",
+          "brandColors": [
+            "#FF2442"
+          ],
+          "colorFile": "color/xiaohongshu.svg"
+        },
+        {
+          "name": "微信",
+          "file": "wechat.svg",
+          "source": "https://wechat.design/brand/main-brand",
+          "brandColors": [
+            "#07C160"
+          ],
+          "colorFile": "color/wechat.svg"
+        },
+        {
+          "name": "抖音",
+          "file": "douyin.png",
+          "source": "https://www.douyin.com/favicon.ico",
+          "brandColors": [
+            "#000000",
+            "#00FAF0",
+            "#FF0050"
+          ]
+        },
+        {
+          "name": "微博",
+          "file": "sinaweibo.svg",
+          "source": "https://en.wikipedia.org/wiki/Sina_Weibo",
+          "brandColors": [
+            "#E6162D"
+          ],
+          "colorFile": "color/sinaweibo.svg"
+        },
+        {
+          "name": "哔哩哔哩",
+          "file": "bilibili.svg",
+          "source": "https://www.bilibili.com",
+          "brandColors": [
+            "#00A1D6"
+          ],
+          "colorFile": "color/bilibili.svg"
+        },
+        {
+          "name": "知乎",
+          "file": "zhihu.svg",
+          "source": "https://www.zhihu.com",
+          "brandColors": [
+            "#0084FF"
+          ],
+          "colorFile": "color/zhihu.svg"
+        }
+      ]
+    },
+    {
+      "name": "海外平台",
+      "icons": [
+        {
+          "name": "Google",
+          "file": "google.svg",
+          "source": "https://developers.google.com/identity/branding-guidelines",
+          "colorFile": "color/google.svg",
+          "brandColors": [
+            "#4285F4",
+            "#EA4335",
+            "#FBBC05",
+            "#34A853"
+          ]
+        },
+        {
+          "name": "GitHub",
+          "file": "github.svg",
+          "source": "https://github.com/logos",
+          "brandColors": [
+            "#181717"
+          ],
+          "colorFile": "color/github.svg"
+        },
+        {
+          "name": "Discord",
+          "file": "discord.svg",
+          "source": "https://discord.com/branding",
+          "brandColors": [
+            "#5865F2"
+          ],
+          "colorFile": "color/discord.svg"
+        },
+        {
+          "name": "X（推特）",
+          "file": "x.svg",
+          "source": "https://about.x.com/en/who-we-are/brand-toolkit",
+          "brandColors": [
+            "#000000"
+          ]
+        },
+        {
+          "name": "YouTube",
+          "file": "youtube.svg",
+          "source": "https://www.youtube.com/howyoutubeworks/resources/brand-resources/#logos-icons-and-colors",
+          "brandColors": [
+            "#FF0000"
+          ],
+          "colorFile": "color/youtube.svg"
+        },
+        {
+          "name": "Instagram",
+          "file": "instagram.svg",
+          "source": "https://about.meta.com/brand/resources/instagram",
+          "brandColors": [
+            "#FF0069"
+          ],
+          "colorFile": "color/instagram.svg"
+        },
+        {
+          "name": "Threads",
+          "file": "threads.svg",
+          "source": "https://www.meta.com/brand/resources/instagram/threads",
+          "brandColors": [
+            "#000000"
+          ]
+        },
+        {
+          "name": "Bluesky",
+          "file": "bluesky.svg",
+          "source": "https://bsky.social/about/blog/press-faq",
+          "brandColors": [
+            "#1185FE"
+          ],
+          "colorFile": "color/bluesky.svg"
+        },
+        {
+          "name": "Telegram",
+          "file": "telegram.svg",
+          "source": "https://telegram.org/tour/screenshots",
+          "brandColors": [
+            "#26A5E4"
+          ],
+          "colorFile": "color/telegram.svg"
+        },
+        {
+          "name": "Reddit",
+          "file": "reddit.svg",
+          "source": "https://www.redditinc.com/brand",
+          "brandColors": [
+            "#FF4500"
+          ],
+          "colorFile": "color/reddit.svg"
+        },
+        {
+          "name": "Facebook",
+          "file": "facebook.svg",
+          "source": "https://about.meta.com/brand/resources/facebook/logo",
+          "brandColors": [
+            "#0866FF"
+          ],
+          "colorFile": "color/facebook.svg"
+        },
+        {
+          "name": "TikTok",
+          "file": "tiktok.svg",
+          "source": "https://tiktok.com",
+          "brandColors": [
+            "#000000"
+          ]
+        }
+      ]
+    }
+  ]
+}
