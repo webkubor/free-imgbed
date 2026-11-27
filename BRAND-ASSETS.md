@@ -15,7 +15,7 @@
 
 | 项目 | 现役标识 | 状态 |
 |---|---|---|
-| chat-mood-gen | `chat-mood-gen/mark-v3.svg` + `chat-mood-gen/mark-v3-dark.svg` | 定稿 |
+| chat-mood-gen | `chat-mood-gen/mark-v4.svg` + `chat-mood-gen/mark-v4-dark.svg` | 青潮渐变，项目已实装 |
 | claude-usage-statusline | `claude-usage-statusline/mark-v3.svg` + `claude-usage-statusline/mark-v3-dark.svg` | 定稿 |
 | device-passport | `device-passport/mark-v3.svg` + `device-passport/mark-v3-dark.svg` | 定稿 |
 | dsh-llm-hub | `dsh-llm-hub/mark-v3.svg` + `dsh-llm-hub/mark-v3-dark.svg` | 定稿 |
@@ -47,6 +47,8 @@
 
 - 图床只保留每项目的现役 logo；替换完成后清理弃用的旧版、过渡版和草稿。
 - 替换标识时**先迁移使用方**（各项目 README、站点、博客数据），确认无引用后再移除旧文件。
+- 跨仓替换期间可在 `transitionAssets` 登记临时共存的 SVG。使用方迁移后移除这些文件及登记。
+- 已确认的母版若有专属留白，用 `subjectSpan` 记录 256 px 渲染实测的主体跨度，后续校验沿用这份测量。
 - 深浅主题成对的文件（`mark-v3.svg` + `mark-v3-dark.svg`）视为同一版本，成对保留。
 - banner、截图、favicon、OG 图不属于 logo，不在此表；也不自动冒充 logo。
 
