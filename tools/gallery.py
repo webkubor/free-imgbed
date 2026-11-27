@@ -42,6 +42,7 @@ def entries(manifests=None):
 def build(site_theme=False):
     manifests = contract.load_manifests()
     organizations = {m['id'] for m in manifests if m.get('kind') == 'organization'}
+    preview_urls = {m['id']: m['galleryUrl'] for m in manifests if 'galleryUrl' in m}
     behavior = ('文档随站内主题开关显示对应 `darkAsset`（以根元素 `.dark` 为准）'
                 if site_theme else '深色主题用 `<picture>` 按系统偏好加载对应 `darkAsset`')
     lines = [START, '', '## 🖼 项目 logo 墙', '',
@@ -55,8 +56,10 @@ def build(site_theme=False):
     organization_rows = []
     project_rows = []
     for id_, asset, dark in entries(manifests):
-        image = f'<img src="{BASE}{html.escape(asset)}" width="120" height="120" alt="{html.escape(id_)} logo">'
-        if dark:
+        preview_url = preview_urls.get(id_)
+        source_url = html.escape(preview_url or BASE + asset)
+        image = f'<img src="{source_url}" width="120" height="120" alt="{html.escape(id_)} logo">'
+        if dark and not preview_url:
             if site_theme:
                 image = image.replace('<img ', '<img class="brand-gallery-light" ', 1)
                 image += f'<img class="brand-gallery-dark" src="{BASE}{html.escape(dark)}" width="120" height="120" alt="{html.escape(id_)} logo">'

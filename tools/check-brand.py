@@ -15,13 +15,14 @@ import subprocess
 import sys
 import tempfile
 import xml.etree.ElementTree as ET
+from urllib.parse import urlsplit
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parent.parent
 FIELDS = {"id", "name", "sourceRepo", "sourceFiles", "asset", "darkAsset",
           "tokens", "rationale", "status"}
 # Optional asset directory and gallery category.
-OPTIONAL_FIELDS = {"dir", "kind"}
+OPTIONAL_FIELDS = {"dir", "kind", "galleryUrl"}
 TOKEN_FIELDS = {"primary", "accent", "onLight", "onDark", "background"}
 HEX = re.compile(r"#[0-9a-fA-F]{6}\Z")
 # Basic geometry and local gradients/masks are allowed; executable/foreign/font/
@@ -83,6 +84,12 @@ def load_manifests(root=ROOT):
             relative_path(source)  # Remote production files need not live in this asset repo.
         require(len(set(d["sourceFiles"])) == len(d["sourceFiles"]), "duplicate sourceFiles")
         require(d["status"] in {"draft", "ready", "review"}, "invalid status")
+        if "galleryUrl" in d:
+            url = d["galleryUrl"]
+            require(isinstance(url, str) and not any(ch.isspace() or ch == chr(92) for ch in url), "invalid gallery URL")
+            preview = urlsplit(url)
+            require(preview.scheme == "https" and preview.hostname and not preview.username and not preview.password,
+                    "gallery URL must be a public HTTPS image")
         t = d["tokens"]
         require(isinstance(t, dict) and set(t) == TOKEN_FIELDS, "invalid token contract")
         require(t["background"] == "transparent", "tokens.background must be transparent")

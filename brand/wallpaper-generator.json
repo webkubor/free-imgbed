@@ -17,5 +17,6 @@
   "background": "transparent"
  },
  "rationale": "在画幅里留出一道风线。最终采用深底青柚绿，渐变为 #CBF381、#A3EA85、#69DCA3。透明母版仅搭配 #2B2A27 深底使用；浅色页面应使用产品自己的带深底图标。标签页和安装图标均沿用这套轮廓与配色。",
- "status": "ready"
+ "status": "ready",
+ "galleryUrl": "https://wallpaper.webkubor.online/logo.svg"
 }
