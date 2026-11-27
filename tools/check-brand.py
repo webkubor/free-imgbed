@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parent.parent
 FIELDS = {"id", "name", "sourceRepo", "sourceFiles", "asset", "darkAsset",
           "tokens", "rationale", "status"}
 # Optional asset directory and gallery category.
-OPTIONAL_FIELDS = {"dir", "kind", "galleryUrl"}
+OPTIONAL_FIELDS = {"dir", "kind", "galleryUrl", "transitionAssets", "subjectSpan"}
 TOKEN_FIELDS = {"primary", "accent", "onLight", "onDark", "background"}
 HEX = re.compile(r"#[0-9a-fA-F]{6}\Z")
 # Basic geometry and local gradients/masks are allowed; executable/foreign/font/
@@ -102,6 +102,18 @@ def load_manifests(root=ROOT):
             require(p.suffix == ".svg" and PurePosixPath(d[key]).parts[0] == asset_dir, "new SVG must be in its project directory")
         require(d["darkAsset"] != d["asset"], "use null for a shared theme asset")
         allowed = {d["asset"], d["darkAsset"]}
+        transition = d.get("transitionAssets", [])
+        require(isinstance(transition, list), "transitionAssets must be a list")
+        for asset in transition:
+            p = local_asset(asset)
+            require(p.suffix == ".svg" and PurePosixPath(asset).parts[0] == asset_dir,
+                    "transition SVG must be in its project directory")
+            require(asset not in allowed, "duplicate transition SVG")
+            allowed.add(asset)
+        if "subjectSpan" in d:
+            span = d["subjectSpan"]
+            require(type(span) in (float, int) and 0.60 <= span <= 0.85,
+                    "subjectSpan must be a fraction between 0.60 and 0.85")
         for candidate in (root / asset_dir).iterdir():
             if (candidate.is_file() and candidate.suffix.lower() in {".svg", ".png", ".webp"}
                     and re.search(r"(?:^|[-_])(?:logo|mark|icon)(?:[-_.]|$)", candidate.stem, re.I)
@@ -159,7 +171,7 @@ def svg_structure(path, manifest, theme):
     return {"viewBox": vb, "colors": sorted(colors), "bytes": path.stat().st_size}
 
 
-def render_asset(path, output, Image):
+def render_asset(path, output, Image, subject_span=None):
     renders = {}
     for size in SIZES:
         target = output / f"{size}.png"
@@ -185,7 +197,9 @@ def render_asset(path, output, Image):
         # 256px is the measurement grid; smaller grids include antialias rounding.
         if size == 256:
             # Permit one raster pixel of measurement rounding at either threshold.
-            require(0.72 - 1/256 <= span <= 0.80 + 1/256, f"subject span outside 72–80% (±1px): {span:.4f}")
+            lower, upper = (0.72, 0.80) if subject_span is None else (subject_span, subject_span)
+            require(lower - 1/256 <= span <= upper + 1/256,
+                    f"subject span outside {lower:.2%}–{upper:.2%} (±1px): {span:.4f}")
             require(abs(margins[0]-margins[2]) <= 0.08 and abs(margins[1]-margins[3]) <= 0.08, "unbalanced transparent margins")
         for name, color in (("light", "#FFFFFF"), ("dark", "#0D1117")):
             base = Image.new("RGBA", image.size, color)
@@ -245,7 +259,7 @@ def main():
                 entry.update(svg_structure(path, manifest, theme))
                 folder = output / manifest["id"] / key
                 folder.mkdir(parents=True, exist_ok=True)
-                entry["renders"] = render_asset(path, folder, Image)
+                entry["renders"] = render_asset(path, folder, Image, manifest.get("subjectSpan"))
                 entry["ok"] = True
             except (ValueError, OSError, TypeError, ET.ParseError, subprocess.SubprocessError) as exc:
                 entry["error"] = str(exc)

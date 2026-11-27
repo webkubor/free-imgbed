@@ -8,6 +8,7 @@ from html.parser import HTMLParser
 import importlib.util
 import json
 import os
+import re
 from pathlib import Path
 import subprocess
 import sys
@@ -50,8 +51,8 @@ class BrandFailureCases(unittest.TestCase):
 
     def test_square_and_accessible_name(self):
         mutations = [self.svg.replace('0 0 256 256', '0 0 256 200'),
-                     self.svg.replace('aria-label="Chat Mood Gen 聊天画幅"', ''),
-                     self.svg.replace('<title>Chat Mood Gen 聊天画幅</title>', ''),
+                     re.sub(r'aria-label="[^"]+"', '', self.svg, count=1),
+                     re.sub(r'<title>[^<]+</title>', '', self.svg, count=1),
                      self.svg.replace('role="img"', 'role="presentation"'),
                      self.svg.replace('aria-label=', 'aria-labelledby="" aria-label=')]
         for text in mutations:
@@ -77,6 +78,18 @@ class BrandFailureCases(unittest.TestCase):
                 folder.mkdir()
                 with self.assertRaises(ValueError):
                     check.render_asset(path, folder, Image)
+
+    def test_approved_subject_span_uses_the_measured_footprint(self):
+        from PIL import Image
+        path = self.root / 'approved.svg'
+        path.write_text(
+            '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">'
+            '<path fill="#178A35" d="M43 52H212V204H43Z"/></svg>'
+        )
+        with self.assertRaisesRegex(ValueError, 'subject span outside'):
+            check.render_asset(path, self.root, Image)
+        result = check.render_asset(path, self.root, Image, 169/256)
+        self.assertAlmostEqual(result['256']['span'], 169/256, places=5)
 
     def test_missing_renderer_is_nonzero_with_failed_json(self):
         env = os.environ.copy()
