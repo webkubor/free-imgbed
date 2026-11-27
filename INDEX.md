@@ -1,10 +1,10 @@
 # Image Index
 
-> 快照: 2026-11-27 18:19 UTC ｜ 44 directories, 303 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-27 18:30 UTC ｜ 44 directories, 301 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
-- [chat-mood-gen/](chat-mood-gen/) — 9 images
+- [chat-mood-gen/](chat-mood-gen/) — 7 images
 - [claude-usage-statusline/](claude-usage-statusline/) — 3 images
 - [cortexos-dev/](cortexos-dev/) — 1 images
 - [design/](design/) — 2 images

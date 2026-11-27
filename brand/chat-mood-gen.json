@@ -19,9 +19,5 @@
  },
  "rationale": "圆润接话由上下两段构成，留白把两句分开。两块共用青潮渐变，浅底为 #255D87、#227567、#4D733E，深底为 #B7DFFF、#88E4D5、#CDEAA0。应用编辑器的 #2C3639 深底采用深版，浏览器标签按系统主题切换，安装图标以深版配同色底板。透明母版的主体跨度为 169/256。",
  "status": "ready",
- "transitionAssets": [
-  "chat-mood-gen/mark-v3.svg",
-  "chat-mood-gen/mark-v3-dark.svg"
- ],
  "subjectSpan": 0.66015625
 }
