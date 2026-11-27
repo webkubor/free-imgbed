@@ -3,6 +3,7 @@
 Run: python3 tools/test-brand.py (requires rsvg-convert + Pillow).
 """
 import base64
+from html import escape
 from html.parser import HTMLParser
 import importlib.util
 import json
@@ -128,9 +129,15 @@ class BrandDeliveryCases(unittest.TestCase):
         self.assertIn('.dark .brand-gallery-light', site)
         self.assertIn('.dark .brand-gallery-dark', site)
         self.assertIn('prefers-color-scheme: dark', readme)
-        for _, asset, dark in gallery.entries():
+        manifests = check.load_manifests()
+        previews = {entry['id']: entry['galleryUrl'] for entry in manifests if 'galleryUrl' in entry}
+        for project, asset, dark in gallery.entries(manifests):
             self.assertIn(asset, site)
-            if dark:
+            if project in previews:
+                image = f'<img src="{escape(previews[project])}"'
+                self.assertIn(image, site)
+                self.assertIn(image, readme)
+            elif dark:
                 self.assertIn(f'class="brand-gallery-dark" src="{gallery.BASE}{dark}"', site)
 
     def test_local_downloads_match_all_manifest_bytes_and_delivery_is_embedded(self):
