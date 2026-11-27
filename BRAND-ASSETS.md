@@ -39,7 +39,7 @@
 | typora-bloom-theme | `typora-Bloom-theme/mark-v3.svg` + `typora-Bloom-theme/mark-v3-dark.svg` | 待评审 |
 | vite-plugin-agent-eyes | `vite-plugin-agent-eyes/mark-v3.svg` + `vite-plugin-agent-eyes/mark-v3-dark.svg` | 定稿 |
 | voxflow | `voxflow/mark-v3.svg` + `voxflow/mark-v3-dark.svg` | 定稿 |
-| wallpaper-generator | `wallpaper-generator/mark-v3.svg` + `wallpaper-generator/mark-v3-dark.svg` | 定稿 |
+| wallpaper-generator | `wallpaper-generator/mark-v4.svg` | 青柚绿定稿，搭配深色底 |
 | webkubor | `webkubor/mark-v3.svg` + `webkubor/mark-v3-dark.svg` | 待评审 |
 | xiaobai-kanban | `xiaobai-kanban/logo.svg` + `xiaobai-kanban/logo-dark.svg` | 网站导航现用标识 |
 

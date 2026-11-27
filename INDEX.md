@@ -1,6 +1,6 @@
 # Image Index
 
-> 快照: 2026-11-25 03:07 UTC ｜ 44 directories, 301 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-27 08:19 UTC ｜ 44 directories, 300 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
@@ -41,7 +41,7 @@
 - [video-editor/](video-editor/) — 1 images
 - [vite-plugin-agent-eyes/](vite-plugin-agent-eyes/) — 2 images
 - [voxflow/](voxflow/) — 6 images
-- [wallpaper-generator/](wallpaper-generator/) — 2 images
+- [wallpaper-generator/](wallpaper-generator/) — 1 images
 - [web-ui/](web-ui/) — 1 images
 - [webkubor/](webkubor/) — 10 images
 - [xianling-music/](xianling-music/) — 2 images
