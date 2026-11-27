@@ -3,23 +3,25 @@
  "name": "Chat Mood Gen",
  "sourceRepo": "webkubor/chat-mood-gen",
  "sourceFiles": [
-  "README.md",
   "public/logo.svg",
-  "src/views/GeneratorView.vue"
+  "public/logo-dark.svg",
+  "src/views/GeneratorView.vue",
+  "vite.config.ts"
  ],
- "asset": "chat-mood-gen/mark-v3.svg",
- "darkAsset": "chat-mood-gen/mark-v3-dark.svg",
+ "asset": "chat-mood-gen/mark-v4.svg",
+ "darkAsset": "chat-mood-gen/mark-v4-dark.svg",
  "tokens": {
-  "primary": "#7A9D8C",
-  "accent": "#A27B5C",
-  "onLight": "#4C6F5D",
-  "onDark": "#9DBEAB",
+  "primary": "#227567",
+  "accent": "#CDEAA0",
+  "onLight": "#227567",
+  "onDark": "#88E4D5",
   "background": "transparent"
  },
- "rationale": "本次新设计解释：沿用 public/logo.svg:16 的聊天轮廓，内部改用两段左右错位的对话内容线，呼应 README.md:16、43–47 的社交模式与批量截图，并与壁纸项目的山景取景形态拉开差异。primary 来自 README.md:35 及 GeneratorView.vue:94 的微信系 sage；accent 来自旧 SVG:8 的装饰棕，本次未使用。onLight #4C6F5D 与 onDark #9DBEAB 为本次从 sage 派生的新前景色，分别解决浅底和深底可见性；不把小红书模式红升级为品牌色。",
+ "rationale": "圆润接话由上下两段构成，留白把两句分开。两块共用青潮渐变，浅底为 #255D87、#227567、#4D733E，深底为 #B7DFFF、#88E4D5、#CDEAA0。应用编辑器的 #2C3639 深底采用深版，浏览器标签按系统主题切换，安装图标以深版配同色底板。透明母版的主体跨度为 169/256。",
  "status": "ready",
  "transitionAssets": [
-  "chat-mood-gen/mark-v4.svg",
-  "chat-mood-gen/mark-v4-dark.svg"
- ]
+  "chat-mood-gen/mark-v3.svg",
+  "chat-mood-gen/mark-v3-dark.svg"
+ ],
+ "subjectSpan": 0.66015625
 }
