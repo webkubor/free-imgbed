@@ -25,7 +25,7 @@
 | free-imgbed | `free-imgbed/mark-v3.svg` | 定稿 |
 | harnessweight | `harnessweight/logo.svg` + `harnessweight/logo-dark.svg` | 项目定稿 |
 | jianpu-editor | `xianling-music/logo-light.svg` + `xianling-music/logo-dark.svg` | 复用仙灵音乐组织标识 |
-| kyvault | `kyvault/logo.svg` + `kyvault/logo-dark.svg` | Ky 桌面版现用标识 |
+| kyvault | `kyvault/app-preview.png` | Ky.app 现用图标，透明标志另附 |
 | lite-browser | `lite-browser/mark-v3.svg` + `lite-browser/mark-v3-dark.svg` | 待评审 |
 | logo-brand-designer | `logo-brand-designer/mark-v3.svg` + `logo-brand-designer/mark-v3-dark.svg` | 待评审 |
 | meridian | `meridian/mark-v3.svg` + `meridian/mark-v3-dark.svg` | 待评审 |

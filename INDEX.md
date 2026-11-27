@@ -1,6 +1,6 @@
 # Image Index
 
-> 快照: 2026-11-27 08:19 UTC ｜ 44 directories, 300 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-27 08:39 UTC ｜ 44 directories, 301 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
 - [blog/](blog/) — 36 images
@@ -18,7 +18,7 @@
 - [free-imgbed/](free-imgbed/) — 2 images
 - [harnessweight/](harnessweight/) — 2 images
 - [hypit/](hypit/) — 13 images
-- [kyvault/](kyvault/) — 2 images
+- [kyvault/](kyvault/) — 3 images
 - [lite-browser/](lite-browser/) — 2 images
 - [logo-brand-designer/](logo-brand-designer/) — 2 images
 - [magpie/](magpie/) — 6 images

@@ -4,6 +4,8 @@
  "sourceRepo": "webkubor/kyvault",
  "sourceFiles": [
   "desktop/brand/README.md",
+  "desktop/brand/icon-256.png",
+  "desktop/src-tauri/icons/icon.icns",
   "desktop/brand/mark.svg",
   "desktop/brand/mark-dark.svg"
  ],
@@ -16,6 +18,7 @@
   "onDark": "#66F0B5",
   "background": "transparent"
  },
- "rationale": "桌面版将 K 的斜笔收成钥匙齿形，沿用炭黑与薄荷绿。这里收录已用于桌面版的透明应用标识。 图床只调整透明画布留白，保留源文件路径几何和配色。",
- "status": "ready"
+ "rationale": "Ky.app 使用炭黑底板和薄荷绿钥匙齿形 K。图床的 app-preview.png 与 Ky.app 0.2.7 安装包内的 256px 图标逐像素一致。两份透明标志仅供品牌素材使用，应用展示以打包图标为准。",
+ "status": "ready",
+ "galleryUrl": "https://cdn.jsdelivr.net/gh/webkubor/free-imgbed@main/kyvault/app-preview.png"
 }
