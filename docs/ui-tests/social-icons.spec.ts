@@ -16,6 +16,10 @@ test.beforeEach(async ({ context, baseURL }) => {
   })
 })
 
+test.afterEach(async ({ context }) => {
+  await context.unrouteAll({ behavior: 'wait' })
+})
+
 async function expectLoadedIcons(page: Page, count = total) {
   const icons = page.locator('.icon-preview')
   await expect(icons).toHaveCount(count)
