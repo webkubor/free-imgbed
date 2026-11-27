@@ -17,5 +17,9 @@
   "background": "transparent"
  },
  "rationale": "本次新设计解释：沿用 public/logo.svg:16 的聊天轮廓，内部改用两段左右错位的对话内容线，呼应 README.md:16、43–47 的社交模式与批量截图，并与壁纸项目的山景取景形态拉开差异。primary 来自 README.md:35 及 GeneratorView.vue:94 的微信系 sage；accent 来自旧 SVG:8 的装饰棕，本次未使用。onLight #4C6F5D 与 onDark #9DBEAB 为本次从 sage 派生的新前景色，分别解决浅底和深底可见性；不把小红书模式红升级为品牌色。",
- "status": "ready"
+ "status": "ready",
+ "transitionAssets": [
+  "chat-mood-gen/mark-v4.svg",
+  "chat-mood-gen/mark-v4-dark.svg"
+ ]
 }
