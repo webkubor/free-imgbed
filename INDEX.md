@@ -1,8 +1,9 @@
 # Image Index
 
-> 快照: 2026-11-27 18:30 UTC ｜ 44 directories, 301 images ｜ 由 tools/index.sh 生成，勿手工编辑
+> 快照: 2026-11-28 09:16 UTC ｜ 45 directories, 332 images ｜ 由 tools/index.sh 生成，勿手工编辑
 
 - [ai-orb/](ai-orb/) — 2 images
+- [bank-icons/](bank-icons/) — 31 images
 - [blog/](blog/) — 36 images
 - [chat-mood-gen/](chat-mood-gen/) — 7 images
 - [claude-usage-statusline/](claude-usage-statusline/) — 3 images

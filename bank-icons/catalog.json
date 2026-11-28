@@ -1,0 +1,237 @@
+[
+  {
+    "id": "boc",
+    "name": "中国银行",
+    "aliases": [
+      "中行"
+    ],
+    "file": "boc.svg"
+  },
+  {
+    "id": "icbc",
+    "name": "中国工商银行",
+    "aliases": [
+      "工行"
+    ],
+    "file": "icbc.svg"
+  },
+  {
+    "id": "abc",
+    "name": "中国农业银行",
+    "aliases": [
+      "abchina",
+      "农业银行",
+      "农行"
+    ],
+    "file": "abc.svg"
+  },
+  {
+    "id": "ccb",
+    "name": "中国建设银行",
+    "aliases": [
+      "建行"
+    ],
+    "file": "ccb.svg"
+  },
+  {
+    "id": "comm",
+    "name": "交通银行",
+    "aliases": [
+      "bankcomm",
+      "交行"
+    ],
+    "file": "comm.svg"
+  },
+  {
+    "id": "psbc",
+    "name": "中国邮政储蓄银行",
+    "aliases": [
+      "邮储",
+      "邮储银行"
+    ],
+    "file": "psbc.svg"
+  },
+  {
+    "id": "citic",
+    "name": "中信银行",
+    "aliases": [
+      "citicbank",
+      "中信"
+    ],
+    "file": "citic.svg"
+  },
+  {
+    "id": "cmb",
+    "name": "招商银行",
+    "aliases": [
+      "cmbchina",
+      "招行"
+    ],
+    "file": "cmb.svg"
+  },
+  {
+    "id": "cmbc",
+    "name": "中国民生银行",
+    "aliases": [
+      "民生银行"
+    ],
+    "file": "cmbc.svg"
+  },
+  {
+    "id": "cgb",
+    "name": "广发银行",
+    "aliases": [
+      "GDB",
+      "cgbchina",
+      "广发"
+    ],
+    "file": "cgb.svg"
+  },
+  {
+    "id": "ceb",
+    "name": "中国光大银行",
+    "aliases": [
+      "cebbank",
+      "光大"
+    ],
+    "file": "ceb.svg"
+  },
+  {
+    "id": "pab",
+    "name": "平安银行",
+    "aliases": [
+      "SPABANK",
+      "pingan"
+    ],
+    "file": "pab.svg"
+  },
+  {
+    "id": "hxb",
+    "name": "华夏银行",
+    "aliases": [],
+    "file": "hxb.svg"
+  },
+  {
+    "id": "spdb",
+    "name": "浦发银行",
+    "aliases": [
+      "上海浦东发展银行",
+      "浦发"
+    ],
+    "file": "spdb.svg"
+  },
+  {
+    "id": "cib",
+    "name": "兴业银行",
+    "aliases": [],
+    "file": "cib.svg"
+  },
+  {
+    "id": "cbhb",
+    "name": "渤海银行",
+    "aliases": [],
+    "file": "cbhb.svg"
+  },
+  {
+    "id": "hf",
+    "name": "恒丰银行",
+    "aliases": [
+      "hfbank"
+    ],
+    "file": "hf.svg"
+  },
+  {
+    "id": "czbank",
+    "name": "浙商银行",
+    "aliases": [],
+    "file": "czbank.svg"
+  },
+  {
+    "id": "cdb",
+    "name": "国家开发银行",
+    "aliases": [
+      "国开行"
+    ],
+    "file": "cdb.svg"
+  },
+  {
+    "id": "eximbank",
+    "name": "中国进出口银行",
+    "aliases": [
+      "进出口银行"
+    ],
+    "file": "eximbank.svg"
+  },
+  {
+    "id": "shbank",
+    "name": "上海银行",
+    "aliases": [
+      "bosc"
+    ],
+    "file": "shbank.svg"
+  },
+  {
+    "id": "bjbank",
+    "name": "北京银行",
+    "aliases": [
+      "bankofbeijing"
+    ],
+    "file": "bjbank.svg"
+  },
+  {
+    "id": "jsbank",
+    "name": "江苏银行",
+    "aliases": [
+      "jsbchina"
+    ],
+    "file": "jsbank.svg"
+  },
+  {
+    "id": "njcb",
+    "name": "南京银行",
+    "aliases": [],
+    "file": "njcb.svg"
+  },
+  {
+    "id": "gzcb",
+    "name": "广州银行",
+    "aliases": [],
+    "file": "gzcb.svg"
+  },
+  {
+    "id": "bankcz",
+    "name": "沧州银行",
+    "aliases": [],
+    "file": "bankcz.svg"
+  },
+  {
+    "id": "lccb",
+    "name": "廊坊银行",
+    "aliases": [],
+    "file": "lccb.svg"
+  },
+  {
+    "id": "chengdebank",
+    "name": "承德银行",
+    "aliases": [],
+    "file": "chengdebank.svg"
+  },
+  {
+    "id": "cscb",
+    "name": "长沙银行",
+    "aliases": [],
+    "file": "cscb.svg"
+  },
+  {
+    "id": "zzbank",
+    "name": "郑州银行",
+    "aliases": [],
+    "file": "zzbank.svg"
+  },
+  {
+    "id": "zybank",
+    "name": "中原银行",
+    "aliases": [],
+    "file": "zybank.svg"
+  }
+]
